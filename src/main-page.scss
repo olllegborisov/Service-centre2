@@ -17,49 +17,6 @@ body {
     background: $YBlack;
 }
 
-// ::-webkit-scrollbar {
-//     // width: 7px;
-//     // height: 61px;
-//     width: 0.5vw;
-//     margin-right: 50px;
-//     padding-right: 50px;
-//     -webkit-tap-highlight-color: transparent;
-// }
-
-// ::-webkit-scrollbar-track {
-//     background-color: #2B3CE0;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//     background: rgba(255, 255, 255, 0.2);
-//     border-radius: 2px;
-//     box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.2);
-//     border: solid 5px transparent;
-// }
-
-// .service-center__city-list::-webkit-scrollbar {
-//     width: 0.8vw;
-// }
-// .service-center__city-list-mobile::-webkit-scrollbar {
-//     width: 1.5vw;
-// }
-// .service-center__city-list::-webkit-scrollbar-thumb {
-//     background: rgba(255, 255, 255, 0.2);
-//     border-radius: 2px;
-//     box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.2);
-//     border: solid 5px transparent;
-// }
-// .service-center__city-list-mobile::-webkit-scrollbar-thumb {
-//     background: rgba(255, 255, 255, 0.2);
-//     border-radius: 2px;
-//     box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.2);
-//     border: solid 5px transparent;
-// }
-
-// ::-webkit-scrollbar-track {
-//     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0000001);
-//     background-color: transparent;
-// }
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -70,6 +27,7 @@ body {
         background: rgba(255, 255, 255, 0.2);
     border-radius: 2px;
 }
+
 
 .header-fixed.hide-header {
   /* transform: translateY(200px); */
@@ -100,14 +58,26 @@ body {
 
 
     @include nmd {
-        height: clamp(50px, 8vw, 85px);
+        height: 40px;
         background: url("/assets/images/main-page/bg-img-header-mobile_result.webp") no-repeat center;
         background-size: cover;
     }
 
+    .container-box {
+        max-width: 100%;
 
 
-  &__black-bgc_js {
+    }
+    .container-box-desktop {
+        max-width: 1290px;
+
+        @include nlg {
+            max-width: 1083px;
+        }
+    }
+
+
+    &__black-bgc_js {
     background-color: $YBlack;
     opacity: 1;
     transition: all .2s linear;
@@ -120,41 +90,41 @@ body {
     background-size: cover;
 
     @include nmd {
-      background: url("/assets/images/main-page/bg-img-header-mobile_result.webp") no-repeat center;
-      background-size: cover;
+        background: url("/assets/images/main-page/bg-img-header-mobile_result.webp") no-repeat center;
+        background-size: cover;
     }
 
     .service-center__choose-city {
-      display: none;
+        display: none;
     }
 
     .service-center__top {
-      display: none;
+        display: none;
     }
 
     .header__menu {
-      width: 100%;
+        width: 100%;
 
-      @include nxxs {
+        @include nxxs {
         height: 40px;
-      }
+        }
     }
 
     ul {
-      padding: 0;
+        padding: 0;
     }
 
     a {
-      font-weight: 900 !important;
+            font-weight: 900 !important;
     }
 
     a:hover {
-      z-index: 0;
-      position: relative;
-      color: $YRealWhite;
-      font-weight: 900;
+            z-index: 0;
+            position: relative;
+            color: $YRealWhite;
+            font-weight: 900;
 
-      &::after {
+            &::after {
         content: "";
         display: block;
         position: absolute;
@@ -165,77 +135,77 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-      }
+        }
     }
 
     @include nmd {
-      .header__img {
+        .header__img {
         display: block;
         position: absolute;
         right: 0;
-      }
+        }
     }
-  }
+    }
 
-  &__menu {
-    display: block;
-    margin: 0 auto;
+    &__menu {
+        display: block;
+        margin: 0 auto;
 
     @include nmd {
-      height: 65px;
+        height: 65px;
     }
 
 
-  }
+    }
 
-  &__menu-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+    &__menu-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
 
     @include nmd {
-      display: none;
-      flex-direction: column;
+        display: none;
+        flex-direction: column;
     }
 
-  }
+    }
 
-  &__menu-item:hover {
-    color: #fff;
-    background-color: rgba(198, 178, 226, 0.2);
+    &__menu-item:hover {
+        color: $MainColor;
+        background-color: rgba(124, 227, 213, 100%);
     
-  }
+    }
 
-  &__menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-    transition: all .2s linear;
-    padding: 10px 30px;
+    &__menu-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        transition: all .2s linear;
+        padding: 10px 30px;
 
     a {
-      display: block;
-      font-family: $font-montserrat;
-      font-weight: 900;
-      font-size: Clamp(12px, 2vw, 28px);
-      line-height: 100%;
-      text-transform: uppercase;
-      color: $YRealWhite;
-      transition: all .2s linear;
-      z-index: 0;
+        display: block;
+        font-family: $font-montserrat;
+        font-weight: 400;
+        font-size: Clamp(12px, 2vw, 28px);
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $MainColor;
+        transition: all .2s linear;
+        z-index: 0;
     }
-  }
+    }
 
-  &__mobile-menu {
-    display: none;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-items: center;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 5px;
-    max-width: 708px;
+    &__mobile-menu {
+        display: none;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-items: center;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 5px;
+        max-width: 708px;
 
     @include nmd {
         display: flex;
@@ -342,75 +312,6 @@ body {
     }
 
 
-    // &__black-bgc_js {
-    //     background-color: $YBlack;
-    //     opacity: 1;
-    //     transition: all .2s linear;
-    //     font-weight: 900;
-    //     display: flex;
-    //     margin: 0 auto;
-    //     align-items: center;
-
-    //     background: url("/assets/images/main-page/bg-img-header_result.webp") no-repeat center;
-    //     background-size: cover;
-
-    //     @include nmd {
-    //         background: url("/assets/images/main-page/bg-img-header-mobile_result.webp") no-repeat center;
-    //         background-size: cover;
-    //     }
-    //     .service-center__choose-city {
-    //         display: none;
-    //     }
-
-    //     .service-center__top {
-    //         display: none;
-    //     }
-
-    //     .header__menu {
-    //         width: 100%;
-
-    //         @include nxxs {
-    //             height: 40px;
-    //         }
-    //     }
-
-    //     ul {
-    //         padding: 0;
-    //     }
-
-    //     a {
-    //         font-weight: 900 !important;
-    //     }
-
-    //     a:hover {
-    //         z-index: 0;
-    //         position: relative;
-    //         color: $YRealWhite;
-    //         font-weight: 900;
-
-    //         &::after {
-    //             content: "";
-    //             display: block;
-    //             position: absolute;
-    //             width: calc(100% + 55px);
-    //             height: 50px;
-    //             background-color: rgba(255, 255, 255, .1);
-    //             top: 50%;
-    //             left: 50%;
-    //             transform: translate(-50%, -50%);
-    //             z-index: -1;
-    //         }
-    //     }
-
-    //     @include nmd {
-    //         .header__img {
-    //             display: block;
-    //             position: absolute;
-    //             right: 0;
-    //         }
-    //     }
-    // }
-
     &__menu {
         display: block;
         margin: 0 auto;
@@ -448,7 +349,7 @@ body {
             font-size: Clamp(12px, 2vw, 28px);
             line-height: 100%;
             text-transform: uppercase;
-            color: $YRealWhite;
+            color: $MainColor;
             transition: all .2s linear;
             z-index: 0;
         }
@@ -522,7 +423,7 @@ body {
         display: block;
         width: 22px;
         height: 2px;
-        background-color: $YRealWhite;
+        background-color: $MainColor;
         margin-bottom: 4px;
     }
 
@@ -530,7 +431,7 @@ body {
         display: block;
         width: 22px;
         height: 2px;
-        background-color: $YRealWhite;
+        background-color: $MainColor;
         margin-bottom: 4px;
     }
 
@@ -538,7 +439,7 @@ body {
         display: block;
         width: 11px;
         height: 2px;
-        background-color: $YRealWhite;
+        background-color: $MainColor;
         margin-bottom: 4px;
         text-align: right;
     }
@@ -703,9 +604,12 @@ body {
 
 
 .service-center {
-    padding: 10px 0 0;
+    padding: 10px 0 1px;
     margin: -110px 0 0;
     position: relative;
+
+    background: url("/assets/images/main-page/bg-img_result.webp") no-repeat center;
+    background-size: cover;
 
     @include nsm {
         background: url("/assets/images/main-page/bg-img-main-mobile_result.webp") no-repeat center;
@@ -721,7 +625,8 @@ body {
 
     &__top-a {
         font-size: clamp(16.66px,2vw,34.813px);
-        font-weight: 700;
+        font-weight: 800;
+        color: $MainColor;
     }
 
     &__current-city {
@@ -787,6 +692,8 @@ body {
         max-width: clamp(70px, 14vw, 198px);
         width: 100%;
         margin-right: 35.68px;
+        margin-left: 22px;
+
 
         @include nxs {
             margin-right: 12px;
@@ -853,7 +760,7 @@ body {
         font-weight: 400;
         font-size: Clamp(15.197px, 2vw, 22px);
         line-height: 160%;
-        color: $YRealWhite;
+        color: $MainColor;
         padding-top: 0px;
         border-radius: 5px;
         display: flex;
@@ -1064,13 +971,15 @@ body {
         line-height: 106%;
         max-width: 506px;
         padding-top: 14.64px;
+        color: $MainColor;
         
     }
     &__subtitle-p {
         font-size: clamp(14px, 4vw, 39.8px);
-        font-weight: 200;
+        font-weight: 400;
         line-height: 100%;
         padding: 8.82px 0px 0px 4.57px;
+        color: $MainColor;
 
         @include nxxs {
             padding: 3px 0 0 1px;
@@ -1176,10 +1085,9 @@ body {
             box-sizing: border-box;
             color: $YRealWhite;
             border-radius: 14.122px;
-            background: #2FCDFF;
+            background: #33C1AF;
             box-shadow: 0px 18.82987px 18.82987px 0px rgba(0, 0, 0, 0.05);
             backdrop-filter: blur(7.061201095581055px);
-            cursor: pointer;
             transition: .2S;
             align-items: center;
             display: flex;
@@ -1195,18 +1103,15 @@ body {
                 width: 100%;
                 line-height: 130%;
                 font-family: $font-petrov;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: Clamp(18px, 1.5vw, 25px);
                 text-align: center;
                 text-transform: uppercase;
+                cursor: default;
 
                 @include nsm {
                     text-transform: math-auto;
                 }
-            }
-
-            &:hover {
-                scale: 1.03;
             }
 
             @include nmd {
@@ -1334,11 +1239,12 @@ body {
 
     &__input {
         background: $YRealWhite;
-        border: 1px solid #00418C;
+        border: 1px solid #fff;
+        box-shadow: 0px 5px 9px rgba(45, 149, 102, 0.25);
         border-radius: 15px;
         padding-left: 28px;
         font-family: $font-petrov;
-        font-weight: 300;
+        font-weight: 400;
         font-size: Clamp(16px, 2vw, 23px);
         color: rgb(9%, 9%, 9%, 1);
         // height: Clamp(34px, 5vw, 70px);
@@ -1484,9 +1390,12 @@ body {
 
 
 .services {
-    padding: 44px 0 45px;
+    padding: 37px 0 16px;
     position: relative;
     background-color: #fff;
+
+    background: url("/assets/images/main-page/bg-img-services_result.webp") no-repeat center;
+    background-size: cover;
 
     @include nmd {
         padding-bottom: 0;
@@ -1499,12 +1408,12 @@ body {
     &__title {
         font-family: $font-petrov;
         font-style: normal;
-        font-weight: 900;
+        font-weight: 800;
         // font-size:49px;
-        font-size: $font-h2;
-        line-height: 100%;
-        color: $Accent;
-        margin-bottom: 40px;
+        font-size: clamp(28.964px, 3.7vw, 56.94px);
+        line-height: 106.5%;
+        color: $MainColor;
+        margin-bottom: 34px;
         text-align: center;
         text-transform: uppercase;
 
@@ -1591,7 +1500,7 @@ body {
 
     &__item {
         box-sizing: border-box;
-        padding: 12px 16px 23px;
+        padding: 10px 28px 23px;
 
         @include nxs {
             padding: 2px 0px 5px;
@@ -1771,6 +1680,7 @@ body {
                     padding-top: 11px;
                     padding-left: 10px;
                     padding-bottom: 2px;
+                    margin-right: -16px;
                 }
             }
 
@@ -1793,7 +1703,7 @@ body {
     background-size: cover;
 }
 .advantages {
-    padding: 46px 0 117px;
+    padding: 38px 0 117px;
     max-height: 899px;
 
     @include nmd {
@@ -1814,11 +1724,11 @@ body {
     &__title {
         text-align: center;
         font-family: $font-porsche;
-        font-weight: 900;
-        font-size: $font-h2;
+        font-weight: 800;
+        font-size: clamp(28.964px,3.7vw,58.484px);;
         line-height: 100%;
         color: $YRealWhite;
-        margin-bottom: 13px;
+        margin-bottom: 9px;
         text-transform: uppercase;
 
         br {
@@ -1844,10 +1754,10 @@ body {
         text-align: center;
         font-family: $font-petrov;
         font-weight: 300;
-        font-size: Clamp(17px, 1.6vw, 20px);
+        font-size: Clamp(17px, 1.6vw, 23.736px);
         line-height: 150%;
         color: $YRealWhite;
-        margin-bottom: 87px;
+        margin-bottom: 61px;
 
         br {
             display: none;
@@ -1876,8 +1786,8 @@ body {
 
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr 0.7fr;
-        gap: 114px 62px;
+        grid-template-columns: 1.1fr 1fr 0.7fr;
+        gap: 65px 62px;
 
 
         @include nlg {
@@ -2004,10 +1914,10 @@ body {
 
     &__text {
         font-family: $font-petrov;
-        font-weight: 300;
+        font-weight: 400;
         // font-size: Clamp(13px, 1vw, 18px);
-        font-size: clamp(14px, 1.3vw, 18px);
-        line-height: 178%;
+        font-size: clamp(14px, 1.3vw, 20px);
+        line-height: 160%;
         color: $YRealWhite;
 
         @include nsm {
@@ -2056,11 +1966,11 @@ body {
     &__content {
         position: relative;
         font-family: $font-petrov;
-        font-weight: 300;
+        font-weight: 400;
         font-size: clamp(15px, 1.2vw, 20px);
-        line-height: 150%;
+        line-height: 160%;
         color: $YRealWhite;
-        padding-top: 37px;
+        padding-top: 57px;
 
         @include nsm {
             // font-size: 4.7vw;
@@ -2144,47 +2054,18 @@ body {
         }
     }
 
-    &__image::before {
-        content: "";
-        background: url(/assets/images/main-page/order-treadmills-lines.svg) no-repeat;
-        position: absolute;
-        top: -6px;
-        left: -55px;
-        width: 378px;
-        height: 140px;
-        z-index: -1;
-
-        @include nlg {
-            display: none;
-        }
-
-    }
-    &__image::after {
-        content: "";
-        background: url(/assets/images/main-page/order-treadmills-lines.svg) no-repeat;
-        position: absolute;
-        top: 32.6em;
-        right: -2.47em;
-        width: 378px;
-        height: 140px;
-        z-index: -1;
-
-        @include nlg {
-            display: none;
-        }
-    }
 
 
     &__title {
         font-family: $font-petrov;
-        font-weight: 900;
+        font-weight: 800;
         // font-size: Clamp(14px, 3vw, 39.258px);
         font-size: Clamp(26.984px, 3vw, 39.258px);
         line-height: 114.5%;
         color: $YRealWhite;
         text-transform: uppercase;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 88px;
 
 
 
@@ -2498,11 +2379,11 @@ body {
         h2 {
             text-align: left;
             font-family: $font-petrov;
-            font-weight: 400;
-            font-size: Clamp(40px, 5vw, 93px);
+            font-weight: 800;
+            font-size: Clamp(40px, 5vw, 84.766px);
             line-height: 88%;
             color: $YSovsemBlack;
-            margin-right: 13px;
+            margin-right: 0px;
             margin-top: 10px;
 
     
@@ -2556,7 +2437,7 @@ body {
         grid-area: short;
         width: Clamp(502px, 156vw, 872px);
         margin-top: 41px;
-        padding-left: 161px;
+        padding-left: 152px;
         
         @include nlg {
             font-size: clamp(14px,1.2vw,18px);
@@ -2665,8 +2546,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(91deg, #2A5BE7 13.96%, #6102E1 91.67%);
-        border-radius: 18.452px;
+        background: linear-gradient(91deg, #38C2AC 13.96%, #96DC77 91.67%);        border-radius: 18.452px;
         grid-area: details;
         margin-top: 65px;
         position: relative;
@@ -2927,7 +2807,7 @@ body {
     &__text {
         font-family: $font-petrov;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 18px;
         line-height: 150%;
         color: $YRealWhite;
@@ -3031,7 +2911,7 @@ body {
     }
 
     &__gray-bgc {
-        background-color: #2FCDFF;
+        background-color: #fff;
         border-radius: 15px;
 
         @include nmd {
@@ -3262,10 +3142,11 @@ body {
             font-family: $font-petrov;
             font-weight: 300;
             font-size: 18px;
-            line-height: 25.6px;
+            line-height: 142.222% ;
             margin-top: 4px;
             position: relative;
             margin-left: 50px;
+            color: $MainColor;
 
             &::before {
                 content: url("/assets/images/main-page/phone.svg");
@@ -3320,12 +3201,12 @@ body {
         font-style: normal;
         font-weight: 600;
         font-size: Clamp(15px, 4vw, 50px);
-        line-height: 85px;
-        color: $YRealWhite;
+        line-height: 170%;
+        color: $MainColor;
         transition: 0.2s;
 
         &:hover {
-            color: #5308b6;
+            color: #33C1AF;
         }
 
 
@@ -3466,9 +3347,9 @@ body {
         background: $YRealWhite;
         border-radius: 15px;
         font-family: $font-petrov;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 22px;
-        line-height: 27px;
+        line-height: 100%;
         color: #939393;
         height: 58px;
         padding-left: 24px;
@@ -3516,7 +3397,7 @@ body {
         font-family: $font-petrov;
         color: $YRealWhite;
         font-weight: 600;
-        font-size: 26.105px;
+        font-size: 22px;
         line-height: 100%;
         cursor: pointer;
         transition: .2S linear;

@@ -109,9 +109,9 @@
     &__phone {
         grid-area: phone;
         font-family: $font-petrov;
-        font-weight: 800;
+        font-weight: 600;
         font-size: 20px;
-        line-height: 25.6px;
+        line-height: 128%;
         text-transform: uppercase;
         color: $YRealWhite;
         padding-left: 113px;
@@ -153,11 +153,14 @@
 
     &__cards {
         grid-area: cards;
+        p {
+            font-weight: 600;
+        }
     }
 
     &__text {
         font-family: $font-petrov;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 22px;
         line-height: 160.86%;
         text-transform: uppercase;

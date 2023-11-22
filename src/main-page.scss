@@ -98,8 +98,11 @@ body {
   background: url("/assets/images/main-page/bg-img-header_result.webp") no-repeat center;
   background-size: cover;
 
+
   @include nmd {
     height: clamp(50px, 8vw, 85px);
+    background: url("/assets/images/main-page/bg-img-header-mobile_result.webp") no-repeat center;
+    background-size: cover;
   }
 
 
@@ -236,13 +239,13 @@ body {
 
     @include nmd {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         position: absolute;
         width: 100%;
         z-index: 2;
         left: 50%;
         transform: translateX(-50%);
-        padding: 5px 13px 13px 13px;
+        // padding: 5px 13px 13px 13px;
     }
     // @include nxxs {
     //     margin-top: -8px;
@@ -257,7 +260,6 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin-top: 15px;
     }
     &__menu-burger.hide-burger-fixed {
         display: none;

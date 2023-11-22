@@ -1,4 +1,3 @@
-
 // MIXINS
 @mixin fadeIn($opacity) {
   opacity: $opacity;
@@ -776,32 +775,32 @@ $xxs-media: 450px;
 //   VARS
 
 
-$font-pt-sans: 'Petrov Sans-Trial',
+$font-pt-sans: 'Futura PT',
 sans-serif;
-$font-pt-sans-narrow: 'Petrov Sans-Trial',
+$font-pt-sans-narrow: 'Futura PT',
 sans-serif;
-$font-arial: 'Petrov Sans-Trial',
+$font-arial: 'Futura PT',
 'Helvetica Neue',
 'Helvetica',
 sans-serif;
-$font-tahoma: 'Petrov Sans-Trial',
+$font-tahoma: 'Futura PT',
 'Verdana',
 'Segoe',
 sans-serif;
-$font-myriad: 'Petrov Sans-Trial',
+$font-myriad: 'Futura PT',
 'Calibri',
 'Lucida Sans',
 'Segoe UI',
 sans serif;
-$font-myriad-light: 'Petrov Sans-Trial',
+$font-myriad-light: 'Futura PT',
 sans serif;
-$font-myriad-bold: 'Petrov Sans-Trial',
+$font-myriad-bold: 'Futura PT',
 sans serif;
-$font-pragmatica-c: 'Petrov Sans-Trial',
+$font-pragmatica-c: 'Futura PT',
 sans serif;
-$font-montserrat: 'Petrov Sans-Trial';
-$font-porsche: 'Petrov Sans-Trial';
-$font-petrov: 'Petrov Sans-Trial';
+$font-montserrat: 'Futura PT';
+$font-porsche: 'Futura PT';
+$font-petrov: 'Futura PT';
 // $font-gilroy: 'Gilroy';
 
 $font-h2: Clamp(28.964px, 3.7vw, 48.913px);

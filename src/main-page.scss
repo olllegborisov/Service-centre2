@@ -79,7 +79,8 @@ body {
   transition: opacity .3s linear;
 
   @include nmd {
-    display: none;
+    // display: none;
+    
   }
 }
 .header-fixed {
@@ -223,6 +224,53 @@ body {
     }
   }
 
+  &__mobile-menu {
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 5px;
+    max-width: 708px;
+
+    @include nmd {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 13px 13px 13px;
+    }
+    // @include nxxs {
+    //     margin-top: -8px;
+    // }
+    }
+
+    &__menu-burger {
+        width: 22px;
+        height: 22px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-top: 15px;
+    }
+    &__menu-burger.hide-burger-fixed {
+        display: none;
+    }
+
+    .js-menu-fixed__close {
+        display: none;
+        font-size: 25px;
+        line-height: 100%;
+    }
+    .js-menu-fixed__close.hide-close-fixed {
+        display: block;
+    }
 }
 
 
@@ -464,6 +512,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
+        margin-top: 8px;
 
     }
 
@@ -548,6 +597,7 @@ body {
     &__close {
         font-size: 25px;
         line-height: 100%;
+        margin-top: 0px;
     }
 }
 
@@ -604,8 +654,12 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 13px;
+        padding: 5px 13px 13px 13px;
         flex-wrap: wrap;
+
+        @include nsm {
+            padding: 5px 3px 13px;
+        }
     }
 
     &__title {

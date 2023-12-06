@@ -85,8 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentCity = city.dataset.city;
         localStorage.setItem('city', city.dataset.city);
         mobCities.classList.remove('js-cities__active');
-        cityList.style.opacity = 0;
-        cityList.style.visibility = 'hidden';
       })
     })
   }
@@ -353,7 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('blur', (event) => this.handleInputBlur(event, input, errText));
       })
 
-      console.log(this.button)
       this.button.addEventListener('click', (event) => {
         event.preventDefault();
         let isValid = this.form.checkValidity()

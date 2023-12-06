@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let serviceBtn = document.querySelector('.service-center__button');
   let thanksModal = document.querySelector('.modal-thanks');
   let closeModalBtn = document.querySelector('.modal-thanks__close');
+  let body = document.body;
 
 
   if (localStorage['city']) {
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cityList.style.opacity = 1;
     cityList.style.visibility = 'visible';
     cityList.style.height = 100 + '%';
+    body.style.overflow = 'hidden';
   }
 
   const appendCityList = () => {
@@ -71,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobCities.classList.remove('js-cities__active');
       cityList.style.opacity = 0;
       cityList.style.visibility = 'hidden';
+      body.style.overflow = 'visible';
     })
   }
 

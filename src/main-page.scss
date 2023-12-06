@@ -326,7 +326,7 @@ body {
     &__menu-list {
         display: flex;
         justify-content: space-between;
-        padding: 29px 0 15px;
+        padding: 33px 0 15px;
 
         @include nmd {
             display: none;
@@ -538,13 +538,13 @@ body {
 
     &__mob {
         position: fixed;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         z-index: 3;
         top: 0;
         background-color: $YBlack;
         display: none;
-        background: url("/assets/images/main-page/bg-img-two-sections_result.webp") no-repeat center;
+        background: url("/assets/images/main-page/bg-img-questions-mobile_result.webp") no-repeat center;
         background-size: cover;
 
     }
@@ -627,6 +627,7 @@ body {
         font-size: clamp(16.66px,2vw,34.813px);
         font-weight: 800;
         color: $MainColor;
+        margin-bottom: -7px;
     }
 
     &__current-city {
@@ -692,7 +693,7 @@ body {
         max-width: clamp(70px, 14vw, 198px);
         width: 100%;
         margin-right: 35.68px;
-        margin-left: 22px;
+        margin-left: 0px;
 
 
         @include nxs {
@@ -775,6 +776,9 @@ body {
         @include nsm {
             margin-left: 0px;
         }
+        @include nxs {
+            min-width: 156px;
+        }
 
         &:hover {
             background-color: $YSovsemBlack;
@@ -789,6 +793,7 @@ body {
             content: url("/assets/images/main-page/location.svg");
             // margin-right: 13px;
             max-height: 31px;
+            margin-right: 5px;
 
             @include nxxs {
                 content: url("/assets/images/main-page/location-mobile.svg");
@@ -801,6 +806,7 @@ body {
             // margin-left: 13px;
             transform: rotate(0deg);
             max-height: 24px;
+            margin-left: 15px;
 
             @include nxxs {
                 content: url("/assets/images/main-page/arrow-down-mobile.svg");
@@ -826,9 +832,9 @@ body {
         background-size: cover;
 
 
-
         @include nmd {
             margin-left: 13px;
+            display: none;
         }
 
         @include nsm {
@@ -880,7 +886,7 @@ body {
     &__choose-city {
         position: static;
         width: fit-content;
-        padding-top: 43px;
+        padding-top: 39px;
     }
 
     &__mobile_js {
@@ -1046,7 +1052,7 @@ body {
 
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr 0.7fr 1fr;
+        grid-template-columns: 0.97fr 1.07fr .7fr 1.01fr;
         grid-template-rows: Clamp(42px, 3vw, 66px);
         margin: 0 auto;
         gap: 33px;
@@ -1119,9 +1125,9 @@ body {
             }
             @include nsm {
                 border-radius: 13px;
-                border: 0.879px solid rgba(255, 255, 255, 0.15);
-                background: linear-gradient(93deg, rgba(255, 255, 255, 0.30) 5.83%, rgba(255, 255, 255, 0.10) 98.85%);
-                box-shadow: 0px 17.58308px 17.58308px 0px rgba(0, 0, 0, 0.05);
+                // border: 0.879px solid rgba(255, 255, 255, 0.15);
+                // background: linear-gradient(93deg, rgba(255, 255, 255, 0.30) 5.83%, rgba(255, 255, 255, 0.10) 98.85%);
+                // box-shadow: 0px 17.58308px 17.58308px 0px rgba(0, 0, 0, 0.05);
             }
             @include nxxs {
                 height: 40px;
@@ -1175,14 +1181,17 @@ body {
         font-size: 0.7rem;
 
         @include nsm {
-            font-size: 0.7rem;
-            left: 2%;
+            font-size: 0.6rem;
+            left: 29px;
         }
 
         @include nxs {
-
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
+        @include nxxs {
+            left: 15px;
+        }
+
     }
 
     &__name {
@@ -1254,6 +1263,7 @@ body {
             color: #808080;
             font-size: Clamp(12px, 2vw, 21px);
             font-weight: 300;
+            opacity: 0.7;
         }
 
 
@@ -1657,10 +1667,20 @@ body {
             border-radius: 22px;
             background-position-x: center;
 
+
             @include nxxs {
                 background: url("/assets/images/main-page/services-treadmills-mobile_result.webp") no-repeat;
 
             }
+
+            .services__br-mobile {
+                display: none;
+
+                @include nsm {
+                    display: block;
+                }
+            }
+
             a {
                 align-items: start;
                 justify-content: end;
@@ -1674,6 +1694,10 @@ body {
                 @include nxxs {
                     align-items: end;
                     justify-content: end;
+                }
+
+                @include nxs {
+                    justify-content: start;
                 }
 
                 p {
@@ -1701,6 +1725,12 @@ body {
 .two-sections {
     background: url("/assets/images/main-page/bg-img-two-sections_result.webp") no-repeat center;
     background-size: cover;
+
+    @include nmd {
+        background: none;
+        background-color: black;
+        background-size: cover;
+    } 
 }
 .advantages {
     padding: 38px 0 117px;
@@ -1791,17 +1821,18 @@ body {
 
 
         @include nlg {
-            gap: 1%;
+            gap: 10% 1%;
 
         }
 
         @include nmd {
             grid-template-columns: 1fr 1fr;
-            row-gap: 1%;
+            row-gap: 7%;
         }
 
         @include nsm {
             grid-template-columns: 1fr;
+            row-gap: 2%;
         }
         @include nxxs {
             row-gap:4.1%;
@@ -1932,7 +1963,14 @@ body {
 }
 
 .order {
-    padding-bottom: 6em;
+    padding-bottom: 5.2em;
+
+    @include nsm {
+        margin-top: 70px;
+    }
+    @include nxs {
+        margin-top: 0px;
+    }
 
     @include nxxs {
         margin-top: 53px;
@@ -2090,6 +2128,7 @@ body {
         position: relative;
         list-style-type: none;
         padding-left: 0;
+        margin-top: 32px;
 
 
 
@@ -2115,7 +2154,7 @@ body {
     }
 
     &__item:last-child {
-        margin-top: 62px;
+        margin-top: 55px;
 
         @include nxxs {
             margin-top: 5px;
@@ -2123,7 +2162,7 @@ body {
     }
 
     &__item {
-        margin-bottom: 32px;
+        margin-bottom: 26px;
 
         @include nxxs {
             line-height: 150%;
@@ -2140,7 +2179,7 @@ body {
 
         &__title {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             font-weight: 800;
             line-height: 32px;
 
@@ -2169,9 +2208,10 @@ body {
                 top: 0.75em;
                 left: -0.85em;
 
-                background: url("/assets/images/main-page/order-dot.svg");
-                width: 1.9px;
-                height: 2.42px;
+                background: #fff;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
 
                 @include nmd {
                     top: 7px;
@@ -2184,7 +2224,7 @@ body {
 
             li {
                 list-style-type: disc;
-                margin-left: 14px;
+                margin-left: 20px;
                 list-style-type: none;
                 position: relative;
 
@@ -2208,7 +2248,7 @@ body {
     &__text {
         font-weight: 800;
         text-align: center;
-        padding-top: 6.4%;
+        padding-top: 9.7%;
 
         @include nlg {
             padding-top: 1%;
@@ -2254,7 +2294,7 @@ body {
 
 .details {
     position: relative;
-    padding: 39px 0 62px;
+    padding: 57px 0 62px;
     background: $YRealWhite;
     overflow: hidden;
     background: url("/assets/images/main-page/bg-img-details_result.webp") no-repeat center;
@@ -2386,11 +2426,13 @@ body {
             margin-right: 0px;
             margin-top: 10px;
 
+
     
             @include nsm {
                 font-size: 59.303px;
                 margin: 0 auto;
                 text-align: center;
+                font-weight: 400;
             }
             @include nxxs {
                 margin-top: 9px;
@@ -2436,8 +2478,8 @@ body {
         color: $YBlack;
         grid-area: short;
         width: Clamp(502px, 156vw, 872px);
-        margin-top: 41px;
-        padding-left: 152px;
+        margin-top: 53px;
+        padding-left: 142px;
         
         @include nlg {
             font-size: clamp(14px,1.2vw,18px);
@@ -2666,16 +2708,17 @@ body {
     background-size: cover;
 
     @include nmd {
-        background: #2B3CE0;
+        background: none;
+        background-color: #17C491;
     }
 }
 
 .faq {
-    padding: 54px 0 170px;
+    padding: 59px 0 170px;
     font-family: 'Gilroy';
 
     @include nmd {
-        background: url("/assets/images/main-page/bg-img-questions-mobile_result.webp") no-repeat center;
+        background: url("/assets/images/main-page/mobile/bg-img/questions_result.webp") no-repeat center;
         background-size: cover;
     }
 
@@ -2872,7 +2915,7 @@ body {
     &__wrapper {
         display: grid;
         grid-template-columns: 1.9fr 1.3fr;
-        gap: 20px;
+        gap: 21px;
         grid-template-areas:
             "brands phone"
             "hours form"
@@ -2924,7 +2967,7 @@ body {
     }
 
     &__brands {
-        padding: 29px 50px 29px 50px;
+        padding: 29px 50px 21px 50px;
         grid-area: brands;
 
         @include nsm {
@@ -2939,6 +2982,13 @@ body {
 
     }
 
+    &__white-bgc:first-of-type  {
+        h4 {
+            font-size: clamp(26px, 2vw, 35px);
+            margin-bottom: 12px;
+        }
+    }
+
     &__subtitle {
         font-family: $font-petrov;
         font-weight: 400;
@@ -2946,7 +2996,7 @@ body {
         font-size: clamp(26px, 1.6vw, 30px);
         line-height: 160%;
         color: $color-black;
-        margin-bottom: 19px;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
 
@@ -2963,8 +3013,7 @@ body {
 
         &_centers {
             position: relative;
-            margin-top: 5px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
 
             &::before {
                 content: url("/assets/images/main-page/location-black.svg");
@@ -2985,7 +3034,7 @@ body {
         }
 
         &_hours {
-            margin-top: 17px;
+            margin-top: 22px;
             position: relative;
 
             @include nsm {
@@ -3084,7 +3133,7 @@ body {
     }
 
     &__hours {
-        padding: 17px 62px 32px 29px;
+        padding: 17px 62px 38px 29px;
         grid-area: hours;
 
         @include nsm {
@@ -3331,8 +3380,12 @@ body {
         color: $YRed;
 
         @include nsm {
-            font-size: 1rem;
-            left: 2vw;
+            font-size: 0.8rem;
+            left: 5.6vw;
+            margin-bottom: 1px;
+        }
+        @include nxs {
+            margin-bottom: 3px;
         }
 
         @include nxs {
@@ -3351,7 +3404,7 @@ body {
         font-size: 22px;
         line-height: 100%;
         color: #939393;
-        height: 58px;
+        height: 55px;
         padding-left: 24px;
         border: none;
 

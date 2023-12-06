@@ -10,14 +10,18 @@
     padding: 65px 0 67px;
 
     @include nmd {
-        background: url("/assets/images/main-page/bg-img-footer-mobile_result.webp") no-repeat center;
+        background: url("/assets/images/main-page/bg-img/footer_result.webp") no-repeat center;
         background-size: cover;
         padding: 10px 0 50px;
     }
 
     @include nsm {
-        padding: 20px 0;
+        padding: 20px 0 60px;
     }
+    @include nsm {
+        padding: 20px 0 0px;
+    }
+
 
     &__bg {
         position: relative;
@@ -69,6 +73,10 @@
         padding-left: 35px;
         padding-right: 21px;
         
+        @include nlgs {
+            padding-right: 0px;
+        }
+
         @include nlg {
             padding-left: 16px;
             grid-column-gap: 74px;
@@ -92,7 +100,7 @@
             text-align: center;
         }
 
-        @include nxs {
+        @include nmd {
             padding-bottom: 42px;
             grid-row-gap: 24px;
         }

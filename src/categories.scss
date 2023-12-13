@@ -5,6 +5,10 @@
 @import "./common-styles/header";
 @import "./common-styles/footer";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: url('/assets/images/trade-in/bg-img-section-page_result.webp')
     no-repeat center;

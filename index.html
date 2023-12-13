@@ -40,7 +40,7 @@
         <nav class="header-fixed__menu container-box container-box-desktop">
             <ul class="header-fixed__menu-list">
             <li class="header-fixed__menu-item">
-                <a href="/pages/contacts.html">Контакты</a>
+                <a class="scrollButton">Контакты</a>
             </li>
             <li class="header-fixed__menu-item">
                 <a href="/pages/guarantees.html">Гарантии</a>
@@ -113,7 +113,7 @@
             <nav class="header__menu container-box">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a class="header__a-js" href="/pages/contacts.html">Контакты</a>
+                        <a class="header__a-js scrollButton">Контакты</a>
                     </li>
                     <li class="header__menu-item">
                         <a class="header__a-js" href="/pages/guarantees.html">Гарантии</a>
@@ -191,19 +191,19 @@
                 <div class="js-menu__mob-list">
                     <ul>
                         <li class="js-menu__mob-item">
-                            <a href="#">Контакты</a>
+                            <a class="scrollButton">Контакты</a>
                         </li>
                         <li class="js-menu__mob-item">
-                            <a href="#">Гарантии</a>
+                            <a href="/pages/guarantees.html">Гарантии</a>
                         </li>
                         <li class="js-menu__mob-item">
                             <a  href="/pages/traid-in.html">Trade-in</a>
                         </li>
                         <li class="js-menu__mob-item">
-                            <a href="#">Доставка</a>
+                            <a href="/pages/delivery.html">Доставка</a>
                         </li>
                         <li class="js-menu__mob-item">
-                            <a  href="#">О нас</a>
+                            <a  href="/pages/about.html">О нас</a>
                         </li>
                     </ul>
                     <!-- <img class="js-menu__mob-img" class="" src="/assets/images/main-page/arrow.webp" alt=""> -->
@@ -292,7 +292,6 @@
                 </ul>
             </div>
         </section>
-        <section class="two-sections">
             <section class="advantages">
                 <div class="advantages__content container-box">
                     <h2 class="advantages__title">преимущества компании</h2>
@@ -300,21 +299,30 @@
                     <ul class="advantages__list">
                         <li class="advantages__item">
                             <div class="advantages__item-subtitle">
-                                <img src="/assets/images/main-page/wrench.svg" alt="ключ">
+                                <picture>
+                                    <source srcset="/assets/images/main-page/mobile/icon/wrench.svg" media="(max-width: 1023px)">
+                                    <img src="/assets/images/main-page/wrench.svg" alt="ключ">
+                                  </picture>
                                 <h4>Диагностика и ремонт</h4>
                             </div>
                             <p class="advantages__text">Диагностика и ремонт массажного <br> оборудования, включая выявление<br>и исправление всех видов неисправностей</p>
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__item-subtitle">
-                                <img src="/assets/images/main-page/Pencil_Alt.svg" alt="карандаш">
+                                <picture>
+                                    <source srcset="/assets/images/main-page/mobile/icon/pencil-alt.svg" media="(max-width: 1023px)">
+                                    <img src="/assets/images/main-page/Pencil_Alt.svg" alt="карандаш">
+                                  </picture>
                                 <h4>Консультация</h4>
                             </div>
                             <p class="advantages__text">Консультация по эксплуатации оборудования,<br> включая рекомендации по правильному <br> использованию, уходу и обслуживанию</p>
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__item-subtitle">
-                            <img src="/assets/images/main-page/Exchange.svg" alt="замена">
+                            <picture>
+                                <source srcset="/assets/images/main-page/mobile/icon/exchange.svg" media="(max-width: 1023px)">
+                                <img src="/assets/images/main-page/Exchange.svg" alt="замена">
+                                </picture>
                                 <h4>Замена</h4>
                             </div>
                             <p class="advantages__text">Замена деталей<br>
@@ -322,14 +330,20 @@
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__item-subtitle">
-                                <img src="/assets/images/main-page/settings.svg" alt="шестеренка">
+                                <picture>
+                                    <source srcset="/assets/images/main-page/mobile/icon/settings.svg" media="(max-width: 1023px)">
+                                    <img src="/assets/images/main-page/settings.svg" alt="шестеренка">
+                                    </picture>
                                 <h4>Официальный сервис</h4>
                             </div>
                             <p class="advantages__text">Собственный гарантийный <br> и&nbsp;постгарантийный сервис <br> в&nbsp; каждом городе.</p>
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__item-subtitle">
-                                <img src="/assets/images/main-page/delivery.svg" alt="доставка">
+                                <picture>
+                                    <source srcset="/assets/images/main-page/mobile/icon/delivery.svg" media="(max-width: 1023px)">
+                                    <img src="/assets/images/main-page/delivery.svg" alt="доставка">
+                                    </picture>
                                 <h4>Доставка</h4>
                             </div>
                             <p class="advantages__text">Собственная доставка <br>  с&nbsp;оперативным   таймингом  <br>и&nbsp;компетентными курьерами.</p>
@@ -338,7 +352,7 @@
                             <div class="advantages__item-subtitle">
                                 <div class="advantages__img">
                                     <picture>
-                                        <source srcset="../assets/images/main-page//product-mobile.svg" media="(max-width: 767px)">
+                                        <source srcset="/assets/images/main-page/mobile/icon/product.svg" media="(max-width: 1023px)">
                                         <img src="/assets/images/main-page/product.svg" alt="продукт">
                                     </picture>
                                 </div>
@@ -472,7 +486,6 @@
                 </div>
             </div>
             </section>
-        </section>
         <section class="details" id="details">
             <div class="details__content container-box details__container-box">
                 <div class="details__wrapper">      
@@ -602,7 +615,7 @@
                             </ol>
                         </div>
                     </section>
-                    <section class="contacts">
+                    <section class="contacts" id="contacts">
                         <div class="contacts__wrapper container-box">
                             <div class="contacts__brands contacts__white-bgc">
                                 <h4 class="contacts__subtitle">Гарантийное обслуживание брендов</h4>

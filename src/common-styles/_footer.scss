@@ -12,38 +12,6 @@
     @include nmd {
         background: url("/assets/images/main-page/bg-img/footer_result.webp") no-repeat center;
         background-size: cover;
-        padding: 10px 0 50px;
-    }
-
-    @include nsm {
-        padding: 20px 0 60px;
-    }
-    @include nsm {
-        padding: 20px 0 0px;
-    }
-
-
-    &__bg {
-        position: relative;
-        display: block;
-
-        img {
-            position: absolute;
-            z-index: -1;
-            left: 50%;
-            transform: translateX(-50%);
-            object-fit: cover;
-
-        }
-
-        @include nsm {
-            img {
-                transform: translate(-86%, -21%);
-                
-            }
-        }
-
-   
     }
 
     &__menu {

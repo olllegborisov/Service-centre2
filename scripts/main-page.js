@@ -196,10 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const jsMenu = document.querySelector(".js-menu__mob")
 
 
-  window.addEventListener('scroll', text)
+  window.addEventListener('scroll', headerVisibility)
 
 
-  function text() {
+  function headerVisibility() {
     // const jsMenu = document.querySelector(".js-menu__mob")
     // const active = jsMenu.querySelector('.js-menu__mob_active')
 
@@ -225,6 +225,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  // let clickedToContacts = getElementById('#contacts')
+
+  // clickedToContacts.addEventListener('click', () => {
+  //   window.addEventListener('scroll', headerVisibility);
+  // });
+
+
+
+
+
 
   function openMobileMenu() {
     let mobMenu = document.querySelector('.js-menu__mob');
@@ -236,32 +246,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openBtn.addEventListener('click', () => {
       mobMenu.classList.add('js-menu__mob_active');
-      window.removeEventListener('scroll', text);
+      window.removeEventListener('scroll', headerVisibility);
     });
     closeBtn.addEventListener('click', () => {
       mobMenu.classList.remove('js-menu__mob_active');
-      window.addEventListener('scroll', text);
+      window.addEventListener('scroll', headerVisibility);
     });
 
     openBtnFixed.addEventListener('click', () => {
       mobMenu.classList.add('js-menu__mob_active');
       containHideHeaderRemove();
-      window.removeEventListener('scroll', text);
+      window.removeEventListener('scroll', headerVisibility);
       // openBtnFixed.classList.add('hide-burger-fixed');
       // closeBtnFixed.classList.add("hide-close-fixed");
     });
 
     closeBtnFixed.addEventListener('click', () => {
       mobMenu.classList.remove('js-menu__mob_active');
-      window.addEventListener('scroll', text);
+      window.addEventListener('scroll', headerVisibility);
       openBtnFixed.classList.remove('hide-burger-fixed');
       closeBtnFixed.classList.remove("hide-close-fixed");
     });
 
     menuItems.forEach(item => {
-
       item.addEventListener('click', () => {
         mobMenu.classList.remove('js-menu__mob_active');
+        window.addEventListener('scroll', headerVisibility);
+        document.getElementById('contacts').scrollIntoView({
+          behavior: 'smooth'
+        });
       })
     })
   }
@@ -424,3 +437,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })
+
+
+
+// Скролл к контактам
+document.querySelectorAll('.scrollButton').forEach((el) => el.addEventListener('click', () => {
+  document.getElementById('contacts').scrollIntoView({
+    behavior: 'smooth'
+  });
+}));

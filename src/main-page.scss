@@ -640,7 +640,7 @@ body {
     line-height: 106.5%;
     text-transform: uppercase;
     color: $YRealWhite;
-    margin: 0 0 78px -15px;
+    margin: 0 0 78px 5px;
     display: flex;
     max-width: 800px;
 
@@ -1204,7 +1204,7 @@ body {
     border: 1px solid #fff;
     box-shadow: 0px 5px 9px rgba(45, 149, 102, 0.25);
     border-radius: 15px;
-    padding-left: 28px;
+    padding-left: 29px;
     font-family: $font-petrov;
     font-weight: 400;
     font-size: Clamp(16px, 2vw, 23px);
@@ -1235,7 +1235,8 @@ body {
   &__textarea {
     grid-area: text;
     resize: none;
-    padding-top: 18px;
+    padding-top: 22px;
+    padding-left: 23px;
     // height: Clamp(34px, 5vw, 150px);
 
     @include nsm {
@@ -1663,7 +1664,7 @@ body {
   // }
 }
 .advantages {
-  padding: 38px 0 117px;
+  padding: 38px 0 180px;
   max-height: 899px;
   background-color: #fff;
 

@@ -197,7 +197,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     align-items: center;
-    padding-left: 13px;
+    padding-left: 11px;
     padding-right: 13px;
     padding-top: 5px;
     max-width: 708px;
@@ -388,7 +388,8 @@ body {
       transform: translateX(-50%);
     }
     @include nxxs {
-      padding-right: 19px;
+      padding-left: 11px;
+      padding-right: 13px;
     }
     // @include nxxs {
     //     margin-top: -8px;
@@ -602,7 +603,7 @@ body {
     font-size: clamp(16.66px, 2vw, 34.813px);
     font-weight: 800;
     color: $MainColor;
-    margin-bottom: -7px;
+    margin-bottom: -3px;
   }
 
   &__current-city {
@@ -622,7 +623,7 @@ body {
       margin-top: 219px;
     }
     @include nsm {
-      padding-bottom: 16px;
+      padding-bottom: 8px;
     }
     @include nxs {
       margin-top: 183px;
@@ -660,7 +661,7 @@ body {
 
     @include nxxs {
       // margin: 0 0 78px 14px;
-      margin: 0 0 -4px 30px;
+      margin: 0 0 -4px 28px;
     }
   }
 
@@ -945,6 +946,9 @@ body {
     max-width: 506px;
     padding-top: 14.64px;
     color: $MainColor;
+    @include nsm {
+      padding-top: 12.64px;
+    }
   }
   &__subtitle-p {
     font-size: clamp(14px, 4vw, 39.8px);
@@ -1042,7 +1046,7 @@ body {
 
     @include nxxs {
       gap: 8px;
-      margin-bottom: 17px;
+      margin-bottom: 20px;
     }
 
     li {
@@ -1073,9 +1077,6 @@ body {
         text-transform: uppercase;
         cursor: default;
 
-        @include nsm {
-          text-transform: math-auto;
-        }
       }
 
       @include nmd {
@@ -1217,6 +1218,9 @@ body {
       font-size: Clamp(12px, 2vw, 21px);
       font-weight: 300;
       opacity: 0.7;
+      top: 0%;
+      left: 0%;
+      transform: translate(0 , -15%);
     }
 
     @include nsm {
@@ -1244,7 +1248,8 @@ body {
     }
 
     @include nxxs {
-      padding-top: 6px;
+      padding-top: 9px;
+      padding-left: 10px;
     }
   }
 
@@ -1667,6 +1672,7 @@ body {
   padding: 38px 0 180px;
   max-height: 899px;
   background-color: #fff;
+  margin-top: -1px;
 
   @include nmd {
     padding-bottom: 15%;
@@ -1677,9 +1683,10 @@ body {
   }
   @include nxs {
     padding: 46px 10px 76px;
+    display: none;
   }
   @include nxxs {
-    padding: 6px 7px 117px;
+    padding: 14px 7px 117px;
   }
 
   &__title {
@@ -1708,7 +1715,7 @@ body {
       }
     }
     @include nxxs {
-      margin-bottom: 3px;
+      margin-bottom: 7px;
     }
   }
 
@@ -1739,7 +1746,7 @@ body {
       }
     }
     @include nxxs {
-      margin-bottom: 28px;
+      margin-bottom: 31px;
     }
     // @include nxxs {
     //     font-size: Clamp(13px, 1.6vw, 20px);
@@ -1765,7 +1772,7 @@ body {
       row-gap: 2%;
     }
     @include nxxs {
-      row-gap: 4.1%;
+      row-gap: 6.8%;
     }
   }
 
@@ -1848,7 +1855,7 @@ body {
         margin-bottom: 0px;
       }
       @include nxs {
-        margin-left: -8px;
+        margin-left: 0px;
         margin-bottom: 18x;
       }
     }
@@ -1860,11 +1867,8 @@ body {
         margin-top: 30px;
       }
       @include nxs {
-        margin-bottom: 0px;
+        margin-bottom: 13px;
         margin-top: 0px;
-      }
-      @include nsm {
-        margin-left: 13px;
       }
     }
   }
@@ -1882,11 +1886,28 @@ body {
       max-width: 474px;
       font-size: clamp(14px, 3vw, 40px);
 
-      br {
-        display: none;
-      }
     }
   }
+}
+
+.advantages-mobile {
+  padding: 15px 0 191px;
+  max-height: 899px;
+  background-color: #fff;
+  margin-top: -1px;
+  display: none;
+
+  
+  &__title {
+    margin-left: 10px;
+  }
+
+  @include nxs {
+    display: block;
+  }
+
+
+
 }
 
 .order {
@@ -1901,16 +1922,18 @@ body {
     no-repeat center;
     background-size: cover;
   }
-  @include nsm {
-    margin-top: 70px;
-  }
   @include nxs {
     margin-top: 0px;
+    display: none;
   }
 
   @include nxxs {
     padding-bottom: 42px;
-    padding-top: 22px;
+    padding-top: 28px;
+  }
+
+  @include nsm {
+    padding-top: 29px;
   }
 
   &__content-mobile {
@@ -1923,9 +1946,6 @@ body {
     padding-top: 37px;
     display: none;
 
-    @include nsm {
-      // font-size: 4.7vw;
-    }
 
     @include nxxs {
       padding-top: 6px;
@@ -1940,7 +1960,7 @@ body {
     font-size: clamp(15px, 1.2vw, 20px);
     line-height: 160%;
     color: $YRealWhite;
-    padding-top: 57px;
+    padding-top: 19px;
 
 
     @include nsm {
@@ -2029,7 +2049,7 @@ body {
     color: $YRealWhite;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 88px;
+    padding-top: 56px;
 
     @include nsm {
       // font-size: 4.5vw;
@@ -2039,6 +2059,7 @@ body {
     @include nxs {
       max-width: 300px;
       line-height: 21px;
+      text-align: center;
       span {
         font-size: 14.853px;
       }
@@ -2108,7 +2129,7 @@ body {
       @include nxxs {
         margin-bottom: 18.5px;
         line-height: 160%;
-        max-width: 278px;
+        max-width: 285px;
       }
     }
 
@@ -2128,8 +2149,8 @@ body {
         left: -0.85em;
 
         background: #fff;
-        width: 6px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
         border-radius: 50%;
 
         @include nmd {
@@ -2143,15 +2164,11 @@ body {
 
       li {
         list-style-type: disc;
-        margin-left: 20px;
+        margin-left: 16px;
         list-style-type: none;
         position: relative;
 
-        @include nsm {
-          br {
-            display: none;
-          }
-        }
+
       }
       li:last-child {
         margin-top: 2px;
@@ -2188,8 +2205,9 @@ body {
         font-size: 4.5vw;
       }
 
-      br {
-        display: none;
+      @include nxs {
+        text-align: center;
+        padding-top: 9%;
       }
 
       span {
@@ -2204,29 +2222,46 @@ body {
   }
 }
 
+.order-mobile {
+  padding-bottom: 5.2em;
+  background: url('/assets/images/main-page/bg-img-order2_result.webp')
+  no-repeat center;
+  background-size: cover;
+  padding-top: 29px;
+  margin-top: -1px;
+  display: none;
+
+
+
+  @include nxs {
+    display: block;
+    padding-bottom: 1.3em;
+  }
+
+}
+
 .details {
   position: relative;
-  padding: 57px 0 62px;
+  padding: 57px 0 47px;
   background: $YRealWhite;
   overflow: hidden;
   background: url('/assets/images/main-page/bg-img-details_result.webp')
-    no-repeat center;
+  no-repeat center;
   background-size: cover;
-
-  // @include nxs {
-  //     background: url("/assets/images/main-page/bg-img-details-mobile_result.webp") no-repeat center;
-  //     background-size: cover;
-  //     padding: 204px 0 62px;
-  // }
 
   @include nmd {
     background: #fff;
+  }
+
+  @include nxs {
+    display: none;
   }
 
   @include nxxs {
     padding: 0;
     min-height: 1263px;
   }
+
 
   &__content {
     @include nxs {
@@ -2272,50 +2307,7 @@ body {
     @include nxxs {
       align-items: start;
     }
-    // display: grid;
-    // grid-template-columns: 33% 71%;
-    // row-gap: clamp(16px,4vw,40px);
-    // position: relative;
-    // grid-template-areas:
-    //     ". title"
-    //     ". short"
-    //     ". text"
-    //     ". details";
 
-    // @include nmd {
-    //     grid-template-columns: 20% 80%;
-    // }
-
-    // @include nmd {
-    //     grid-template-areas:
-    //     "img short"
-    //     "details details"
-    //     "text text";
-    // }
-
-    // @include nsm {
-    //     grid-template-columns: 30% 70%;
-    //     row-gap: 6vw;
-    //     padding: 0;
-    //     grid-template-areas:
-    //         "img"
-    //         "short"
-    //         "details"
-    //         "text";
-    //     grid-template-columns: 1fr;
-    // }
-
-    // @include nxs {
-    //     padding: 0;
-    //     grid-template-areas:
-    //     "img"
-    //     "short"
-    //     "details"
-    //     "text";
-    //     grid-template-columns: 1fr;
-    // }
-
-    //mobile
     @include nxs {
       span {
         font-size: 39.75px;
@@ -2338,7 +2330,6 @@ body {
         font-size: 59.303px;
         margin: 0 auto;
         text-align: center;
-        font-weight: 400;
       }
       @include nxxs {
         margin-top: 9px;
@@ -2487,8 +2478,7 @@ body {
 
   &__detailed {
     display: inline-block;
-    padding: 0 4.5em;
-    width: 100%;
+    padding: 20px 0;
     max-width: 1001px;
     min-height: 143px;
     display: flex;
@@ -2499,7 +2489,7 @@ body {
     background-size: cover;
     border-radius: 18.452px;
     grid-area: details;
-    margin-top: 65px;
+    margin-top: 40px;
     position: relative;
 
     // @include nlg {
@@ -2552,12 +2542,15 @@ body {
     }
 
     &__text {
+      padding: 19px 61px;
       font-family: $font-petrov;
       font-weight: 800;
       font-size: clamp(19px, 2.4vw, 36.757px);
       line-height: 143.231%;
       color: $YRealWhite;
       width: 100%;
+      border-radius: 18.452px;
+      background: linear-gradient(91deg, #38C2AC 13.96%, #96DC77 91.67%);
 
       br {
         @include nmd {
@@ -2566,9 +2559,14 @@ body {
       }
 
       @include nsm {
-        padding: 0 1vw;
+        padding: 19px 4vw;
         width: 100%;
-        font-size: 6vw;
+        font-size: 4vw;
+      }
+      @include nxs {
+        background: none;
+        font-size: 18px;
+        text-align: center;
       }
     }
 
@@ -2596,6 +2594,40 @@ body {
         font-size: 16px;
       }
     }
+  }
+  
+}
+.details-mobile {
+  position: relative;
+  padding: 57px 0 47px;
+  background: $YRealWhite;
+  overflow: hidden;
+  background: url('/assets/images/main-page/bg-img-details_result.webp')
+  no-repeat center;
+  background-size: cover;
+  display: none;
+
+
+  .details__title-wrap {
+    text-align: left;
+  }
+  .details__title1, .details__title2 {
+    color: #000;
+    line-height: 88%;
+    font-family: Futura PT;
+    margin: 0 auto;
+  }
+  .details__title1 {
+    font-size: 59.303px;
+    font-weight: 600;
+  }
+  .details__title2 {
+    font-size: 39.75px; 
+    font-weight: 400;
+  }
+
+  @include nxs {
+    display: block;
   }
 }
 

@@ -79,7 +79,7 @@ body {
 .category-info {
 
     &__content {
-        padding-top: 50px;
+        padding-top: 25px;
         padding-bottom: 0px;
         position: relative;
         z-index: 2;
@@ -90,6 +90,7 @@ body {
         }
         @include nxs {
             padding-top: 11px;
+            display: none;
         }
         @include nmd {
             padding-bottom: 14px;
@@ -105,6 +106,7 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-bottom: Clamp(10px, 3vw, 28px);
+        padding-top: 10px;
 
         @include nsm {
             justify-content: center;
@@ -112,7 +114,7 @@ body {
     }
 
     &__back {
-        margin-bottom: Clamp(10px, 3vw, 30px);
+        margin-bottom: Clamp(10px, 3vw, 58px);
 
         &__block {
             display: flex;
@@ -121,10 +123,10 @@ body {
 
             p {
                 color: $YRealWhite;
-                font-size: clamp(18.846px,3vw,25px);
+                font-size: clamp(18.846px,3vw,28px);
                 font-family: $font-petrov;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 400;
                 line-height: 150%;
             }
         } 
@@ -176,7 +178,7 @@ body {
         line-height: 110%;
         color: $YRealWhite;
         text-shadow: 0px 0px 56.89px $YSovsemBlack;
-        margin-top: 24px;
+        margin-top: 12px;
 
         @include nsm {
             font-size: 12vw;
@@ -284,6 +286,14 @@ body {
 
 }
 
+.category-info-mobile {
+    display: none;
+    @include nxs {
+        display: block;
+    }
+}
+
+
 .service-centers {
     margin-top: 100px;
     
@@ -325,6 +335,7 @@ body {
 .request {
     padding-bottom: 102px;
     margin-top: 45px;
+    background: #33C1AF;
 
 
     @include nsm {
@@ -369,7 +380,11 @@ body {
 
         h2 {
             margin-bottom: 11px;
+            @include nxs {
+                margin-bottom: 36px;
+            }
         }
+
 
         span {
             font-size: 24.958px;
@@ -378,6 +393,9 @@ body {
             line-height: 110%;
             margin-top: 30px;
             margin-bottom: 18px;
+            @include nxs {
+                margin-top: 35px;
+            }
         }
 
         .request__form__btn {
@@ -437,8 +455,12 @@ body {
     @include nsm {
         margin-top: -13px;
     }
+    @include nxs {
+        margin-bottom: 0px;
+    }
 
     &__wrapper {
+        padding-top: 53px;
         background: #33C1AF;
         border-radius: 13px;
         display: grid;
@@ -463,6 +485,9 @@ body {
             border-bottom-right-radius: 0;
             background: none;
         }
+        @include nxs {
+            padding-top: 30px;
+        }
     }
     
     &__title {
@@ -477,6 +502,8 @@ body {
         text-align: left;
         margin-bottom: 3%;
         padding-left: 48px;
+        display: flex;
+        flex-direction: column;
 
         @include nlg {
             text-align: center;
@@ -585,7 +612,6 @@ body {
             font-weight: 300;
             font-size:Clamp(16px, 4vw, 22px);
             line-height: 19px;
-        
             background: #939393;
             border-radius: 13px;
             color: #FFFFFF;
@@ -594,7 +620,8 @@ body {
             cursor: pointer;
 
             padding: 32.5px 0px;
-            margin-bottom: 75px;
+            margin-bottom: 52px;
+            margin-top: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -615,7 +642,7 @@ body {
                 }
             }
             @include nxs {
-                margin-bottom: 29px;
+                margin-bottom: 0px;
             }
         }
 
@@ -667,7 +694,6 @@ body {
                 position: absolute;
                 left: 0em;
                 cursor: pointer;
-                
             }
             
             &:checked+label {
@@ -923,7 +949,6 @@ body {
         
         line-height: 116%;
         color: #FFFFFF;
-        padding-bottom: 6%;
         grid-area: title;
 
         @include nsm{
@@ -940,33 +965,41 @@ body {
     &__text {
         font-family: $font-petrov;
         font-style: normal;
-        font-weight: 300;
-        font-size: clamp(12px,1.2vw,20px);
+        font-weight: 400;
+        font-size: clamp(12px,1.2vw,23px);
         line-height: 170%;
         color: #FFFFFF;
+        padding-bottom: 45px;
+        margin-top: -8px;
 
         &_bold {
             font-weight: 900;
         }
 
-        @include nsm {
-            br {
-                display: none;
-            }
-        }
+        // @include nsm {
+        //     br {
+        //         display: none;
+        //     }
+        // }
 
         @include nsm {
-            font-size: 4.7vw;
+            font-size: 4.68vw;
             margin: 0;
+        }
+        @include nxs {
+            line-height: 173%;
+            padding-bottom: 25px;
+            font-size: 15px;
         }
 
         
     }
 
     &__details {
-        padding-top: 14%;
         display: flex;
         align-items: center;
+        margin-top: -26px;
+
 
         @include nsm {
             padding-top: 6.5%;
@@ -998,12 +1031,15 @@ body {
     }
 
     &__p {
-        padding-top: 6%;
         margin-left: -33px;
 
         @include nsm {
             padding-top: 8%;
             margin-left: 0px;
+        }
+        @include nxs {
+            padding-top: 0px;
+            margin-bottom: 21px;
         }
     }
 
@@ -1019,6 +1055,7 @@ body {
         grid-area: second-title;
         margin-left: -32px;
         max-width: 581px;
+        padding-bottom: 57px;
 
 
         @include nlg {
@@ -1039,10 +1076,14 @@ body {
             font-size: 5.64vw;
             max-width: 100%;
             margin-left: 0px;
+            text-align: center;
         }
         @include nmd {
             padding-top: 10.7vw;
-            text-align: center;
+        }
+        @include nxs {
+            padding-top: 3.7vw;
+            padding-bottom: 0px;
         }
 
     }
@@ -1054,7 +1095,7 @@ body {
     &__mt39px {
         margin-top: 59px;
         margin-bottom: 14px;
-        line-height: 186%;
+        line-height: 163%;
         margin-left: 9px;
 
 
@@ -1067,8 +1108,8 @@ body {
     }
 
     &__mt39px2 {
-        margin-top: 49px;
-        line-height: 182%;
+        margin-top: -28px;
+        line-height: 161%;
         margin-left: 9px;
 
         @include nxs {
@@ -1085,13 +1126,16 @@ body {
                 padding-bottom: 40px;
             }
             @include nxs {
-                padding-bottom: 33px;
+                padding-bottom: 8px;
             }
         }
 
         @include nsm {
             margin: 0;
             padding-bottom: 12vw;
+        }
+        @include nxs {
+            padding-bottom: 20vw;
         }
     }
 
@@ -1109,6 +1153,7 @@ body {
 
     &__item-img:nth-of-type(3) {
         margin-left: -27px;
+        margin-top: -51px;
 
         @include nsm {
             margin-left: 0px;
@@ -1137,6 +1182,10 @@ body {
             }
         }
     }
+
+    &__bold {
+        font-weight: 600;
+    }
     
 }
 
@@ -1156,7 +1205,7 @@ body {
         }
     }
 
-    padding: 112px 0 69px;
+    padding: 21px 0 13px;
 
     @include nsm {
         padding-top: 0;
@@ -1229,11 +1278,13 @@ body {
         @include nsm {
           
             padding: 0;
-            font-size: 12.5vw;
+            font-size: 9.5vw;
             text-align: center;
         }
         @include nxs {
             padding-right: 0px;
+            font-size: 38.995px;
+            font-size: 12.5vw;
         }
     }
 
@@ -1322,7 +1373,8 @@ body {
             padding-bottom: 7%;
         }
         @include nxs {
-            padding-top: 10%;
+            padding-top: 5%;
+            padding-bottom: 11%;
         }
     }
 
@@ -1973,11 +2025,11 @@ body {
         }
 
 
-        br {
-            @include nmd {
-                display: none;
-            }
-        }
+        // br {
+        //     @include nmd {
+        //         display: none;
+        //     }
+        // }
 
         @include nsm {
             font-size: 4vw;
@@ -2198,9 +2250,4 @@ body {
     background-color: #5308B6;
 }
 
-.footer {
-    @include nsm {
-        display: none;
-    }
-}
 

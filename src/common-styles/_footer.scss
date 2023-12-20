@@ -7,11 +7,14 @@
     overflow: hidden;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 65px 0 67px;
+    padding: 22px 0 53px;
 
     @include nmd {
-        background: url("/assets/images/main-page/bg-img/footer_result.webp") no-repeat center;
+        background: url("/assets/images/main-page/mobile/bg-img/footer_result.webp") no-repeat center;
         background-size: cover;
+    }
+    @include nxs {
+        padding: 22px 0 22px;
     }
 
     &__menu {
@@ -36,10 +39,11 @@
         grid-template-areas: 
         "logo menu hours"
         "phone menu cards";
-        grid-column-gap: 104px;
+        grid-column-gap: 88px;
         grid-row-gap: 28px;
-        padding-left: 35px;
-        padding-right: 21px;
+        padding-left: 45px;
+        padding-right: 0px;
+        margin-top: 13px;
         
         @include nlgs {
             padding-right: 0px;
@@ -98,7 +102,9 @@
         }
         @include nxs {
             padding-top: 5px;
+            font-weight: 600;
         }
+
         
         a {
             transition: all .2s;
@@ -141,6 +147,9 @@
         line-height: 160.86%;
         text-transform: uppercase;
         color: $YRealWhite;
+        @include nxs {
+            font-weight: 600;
+        }
         
     }
 

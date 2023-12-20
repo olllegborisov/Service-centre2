@@ -217,6 +217,7 @@ body {
     // }
   }
 
+
   &__menu-burger {
     width: 22px;
     height: 22px;
@@ -653,6 +654,10 @@ body {
       max-width: 480px;
     }
 
+    @include nxs {
+
+    }
+
     @include nsm {
       max-width: 400px;
       margin: 0 auto;
@@ -1045,7 +1050,7 @@ body {
     }
 
     @include nxxs {
-      gap: 8px;
+      gap: 10px;
       margin-bottom: 20px;
     }
 
@@ -1678,7 +1683,7 @@ body {
     padding-bottom: 15%;
   }
   @include nsm {
-    padding: 46px 10px 117px;
+    padding: 46px 10px 140px;
     max-height: 100%;
   }
   @include nxs {
@@ -1918,9 +1923,7 @@ body {
 
 
   @include nmd {
-    background: url('/assets/images/main-page/mobile/bg-img/order_result.webp')
-    no-repeat center;
-    background-size: cover;
+
   }
   @include nxs {
     margin-top: 0px;
@@ -2016,6 +2019,9 @@ body {
         max-height: 500px;
         margin-top: 0px;
       }
+      @include nxs {
+        max-height: 110vw;
+      }
       @include nxxs {
         max-height: 319px;
       }
@@ -2089,7 +2095,7 @@ body {
 
       @include nxxs {
         margin-left: 11px;
-        margin-top: 5px;
+        margin-top: 4px;
       }
     }
   }
@@ -2202,12 +2208,13 @@ body {
       padding-top: 3%;
 
       @include nsm {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
       }
 
       @include nxs {
         text-align: center;
         padding-top: 9%;
+        font-size: 4.5vw;
       }
 
       span {
@@ -2236,8 +2243,10 @@ body {
   @include nxs {
     display: block;
     padding-bottom: 1.3em;
+      background: url('/assets/images/main-page/mobile/bg-img/order2.webp')
+      no-repeat center;
+      background-size: cover;
   }
-
 }
 
 .details {
@@ -2393,10 +2402,6 @@ body {
       padding-left: 3vw;
       font-size: 4.5vw;
       width: 100vw;
-
-      br {
-        display: none;
-      }
     }
     @include nsm {
       font-size: 3vw;
@@ -2410,7 +2415,8 @@ body {
 
     @include nxxs {
       max-width: 300px;
-      margin-top: -90px;
+      margin-top: -82px;
+      margin-bottom: 45px;
     }
   }
 
@@ -2442,10 +2448,6 @@ body {
       font-size: 3vw;
       padding-top: 5vw;
       width: 100vw;
-
-      br {
-        display: none;
-      }
     }
 
     @include nxs {
@@ -2465,7 +2467,7 @@ body {
   @include nxs {
     &__detailed:before {
       content: '';
-      bottom: 140px;
+      bottom: 98px;
       position: absolute;
       width: 239px;
       height: 241px;
@@ -2500,21 +2502,20 @@ body {
     @include nsm {
       margin-top: 13vw;
       flex-direction: column;
-      padding: 15px;
+      padding: 15px 15px 19px;
       line-height: 134%;
       border-radius: 0px;
       width: 100%;
     }
 
     @include nxs {
-      margin-top: 50vw;
       order: 2;
-      margin-top: 52vw;
+      margin-top: 44vw;
       background: url('/assets/images/main-page/mobile/bg-img/girl_result.webp')
       no-repeat center;
       background-size: cover;
       min-height: 116px;
-      padding-top: 104px;
+      padding-top: 83px;
     }
 
     &__img {
@@ -2546,7 +2547,7 @@ body {
       font-family: $font-petrov;
       font-weight: 800;
       font-size: clamp(19px, 2.4vw, 36.757px);
-      line-height: 143.231%;
+      line-height: 132.231%;
       color: $YRealWhite;
       width: 100%;
       border-radius: 18.452px;
@@ -2567,6 +2568,7 @@ body {
         background: none;
         font-size: 18px;
         text-align: center;
+        padding: 25px 1vw 0px;
       }
     }
 
@@ -2599,7 +2601,7 @@ body {
 }
 .details-mobile {
   position: relative;
-  padding: 57px 0 47px;
+  padding: 8px 0 0px;
   background: $YRealWhite;
   overflow: hidden;
   background: url('/assets/images/main-page/bg-img-details_result.webp')
@@ -2610,6 +2612,7 @@ body {
 
   .details__title-wrap {
     text-align: left;
+    margin: 0 auto;
   }
   .details__title1, .details__title2 {
     color: #000;
@@ -2620,10 +2623,13 @@ body {
   .details__title1 {
     font-size: 59.303px;
     font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
   }
   .details__title2 {
     font-size: 39.75px; 
     font-weight: 400;
+    margin-left: 6px;
   }
 
   @include nxs {
@@ -2657,7 +2663,7 @@ body {
     padding-bottom: 60px;
   }
   @include nxs {
-    padding: 28px 0 5px;
+    padding: 19px 0 5px;
   }
 
   &__title {
@@ -2672,7 +2678,7 @@ body {
 
     @include nxs {
       font-size: 12vw;
-      margin-bottom: 27px;
+      margin-bottom: 24px;
     }
   }
 
@@ -2716,10 +2722,14 @@ body {
     @include nmd {
       font-size: 4.375vw;
       padding-right: 0px;
+      font-weight: 600;
 
       br {
         display: block;
       }
+    }
+    @include nxs {
+      font-size: 15px;
     }
 
     // p {
@@ -2790,7 +2800,8 @@ body {
     @include nxxs {
       font-size: 14px;
       margin-left: -15px;
-      margin-top: 18px;
+      margin-top: 8.6px;
+      max-width: 270px;
     }
   }
 }
@@ -2846,7 +2857,8 @@ body {
     }
 
     @include nxs {
-      gap: 8px;
+      gap: 11px;
+      margin-top: 0px;
     }
   }
 
@@ -2869,6 +2881,7 @@ body {
   &__gray-bgc {
     background-color: #fff;
     border-radius: 15px;
+    padding-top: 4px;
 
     @include nmd {
       background: none;
@@ -2889,16 +2902,25 @@ body {
     }
 
     @include nxs {
-      padding: 4vw 4vw 3.7vw 4vw;
+      padding: 4vw 4vw 4.3vw 4vw;
     }
   }
 
   &__white-bgc:first-of-type {
     h4 {
-      font-size: clamp(26px, 2vw, 35px);
-      margin-bottom: 12px;
+      font-size: clamp(18px, 2vw, 35px);
+      margin-bottom: 2px;
     }
   }
+
+  &__brands:first-child {
+    h4 {
+      display: flex;
+      justify-content: center;
+      padding-left: 0px;
+    }
+  }
+
 
   &__subtitle {
     font-family: $font-petrov;
@@ -2914,12 +2936,11 @@ body {
     @include nsm {
       font-size: 4.7vw;
       margin-bottom: 1vw;
-      padding-left: 7vw;
+      padding-left: 8vw;
     }
 
     @include nxs {
       margin-bottom: 2vw;
-      padding-left: 8vw;
     }
 
     &_centers {
@@ -3048,7 +3069,10 @@ body {
     }
 
     @include nsm {
-      padding: 10px 22px 20px 13px;
+      padding: 10px 28px 24px 19px;
+    }
+    @include nxs {
+      margin-top: -1px;
     }
   }
 
@@ -3063,7 +3087,7 @@ body {
     grid-area: trade-in;
 
     @include nsm {
-      padding: 16px 21px 14px 14px;
+      padding: 16px 21px 21px 14px;
     }
   }
 
@@ -3170,6 +3194,9 @@ body {
         color: $YRealWhite;
       }
     }
+    @include nxs {
+      font-weight: 800;
+    }
   }
 
   &__link {
@@ -3186,14 +3213,14 @@ body {
     }
 
     @include nxs {
-      margin-top: 11px;
+      margin-top: 3px;
     }
   }
 
   &__text {
     font-family: $font-petrov;
     font-weight: 400;
-    font-size: Clamp(16px, 3vw, 18px);
+    font-size: Clamp(13px, 3vw, 18px);
     line-height: 160%;
     color: $YBlack;
     width: 100%;
@@ -3262,7 +3289,7 @@ body {
     @include nmd {
       background-color: $YRealWhite;
       border-radius: 15px;
-      padding: 14px 11px 14px 12px;
+      padding: 14px 11px 33px 12px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       gap: 10px;
@@ -3364,7 +3391,8 @@ body {
       }
     }
     @include nxs {
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: 800;
     }
   }
 }

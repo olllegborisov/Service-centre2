@@ -76,6 +76,13 @@ body {
     }
 }
 
+
+.category-info_adaptive {
+    @include nxs {
+        display: none;
+    }
+}
+
 .category-info {
 
     &__content {
@@ -90,7 +97,6 @@ body {
         }
         @include nxs {
             padding-top: 11px;
-            display: none;
         }
         @include nmd {
             padding-bottom: 14px;
@@ -602,9 +608,6 @@ body {
             height: 80%;
         }
 
-        &__policy-link {
-            text-decoration: underline;
-        }
 
         &__btn {
             font-family: $font-petrov;
@@ -724,11 +727,14 @@ body {
                     cursor: pointer;
 
                     @include nlg {
-                        top: 14.5%;
+                        top: 20.5%;
                     }
 
                     @include nlgs {
-                        top: 8.5%;
+                        top: 19.5%;
+                    }
+                    @include nmd {
+                        top: 11.5%;
                     }
 
                     @include nsm {
@@ -2247,7 +2253,7 @@ body {
 }
 
 .privacy-bg {
-    background-color: #5308B6;
+    background-color: #33C1AF;
 }
 
 

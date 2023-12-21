@@ -76,6 +76,9 @@
             padding-bottom: 42px;
             grid-row-gap: 24px;
         }
+        @include nsm {
+            grid-row-gap: 7.5vw;
+        }
     }
 
     &__logo {
@@ -97,8 +100,12 @@
         padding-left: 113px;
         padding-top: 30px;
 
+
         @include nmd {
             padding-left: 0px;
+        }
+        @include nsm {
+            font-size: 6.3vw;
         }
         @include nxs {
             padding-top: 5px;
@@ -147,8 +154,13 @@
         line-height: 160.86%;
         text-transform: uppercase;
         color: $YRealWhite;
+        @include nsm {
+            font-size: 6.9vw;
+            padding-bottom: 20px;
+        }
         @include nxs {
             font-weight: 600;
+            padding-bottom: 0px;
         }
         
     }
@@ -161,11 +173,15 @@
         
         img {
             margin-bottom: -34px;
+            @include nsm {
+                width: 22.5vw;
+            }
         }
 
         @include nmd {
             justify-content: center;
         }
+
 
         @include nxs {
             margin-top: -17px;

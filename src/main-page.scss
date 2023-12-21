@@ -63,6 +63,10 @@ body {
     background-size: cover;
   }
 
+  @include nsm {
+    height: 12.5vw;
+  }
+
   .container-box {
     max-width: 100%;
   }
@@ -202,6 +206,11 @@ body {
     padding-top: 5px;
     max-width: 708px;
 
+
+    @include nsm {
+      padding-top: 1.5vw;
+    }
+
     @include nmd {
       display: flex;
       align-items: center;
@@ -226,6 +235,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+
+    @include nsm {
+      background: url(/assets/images/main-page/burger.svg) no-repeat;
+      background-size: cover;
+      height: 4.5vw;
+      width: 7vw;
+    }
   }
   &__menu-burger.hide-burger-fixed {
     display: none;
@@ -256,6 +272,7 @@ body {
     }
     @include nsm {
       padding-top: 20px;
+      height: 19.8vw;
     }
     @include nxxs {
       padding-top: 0px;
@@ -364,8 +381,8 @@ body {
     align-items: center;
 
     img {
-      @include nxxs {
-        max-width: 169px;
+      @include nsm {
+        width: 55.1vw;
       }
     }
   }
@@ -378,7 +395,7 @@ body {
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 5px;
-    max-width: 708px;
+    max-width: 100vw;
 
     @include nmd {
       display: flex;
@@ -387,6 +404,9 @@ body {
       z-index: 2;
       left: 50%;
       transform: translateX(-50%);
+    }
+    @include nsm {
+      padding-top: 1.5vw;
     }
     @include nxxs {
       padding-left: 11px;
@@ -405,6 +425,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+
+    @include nsm {
+      background: url('/assets/images/main-page/burger.svg') no-repeat;
+      background-size: cover;
+      height: 4.5vw;
+      width: 7vw;
+    }
   }
 
   &__line-1 {
@@ -413,6 +440,12 @@ body {
     height: 2px;
     background-color: $MainColor;
     margin-bottom: 4px;
+
+    @include nsm {
+      width: 6.8vw;
+      height: 0.7vw;
+      display: none;
+    }
   }
 
   &__line-2 {
@@ -421,6 +454,12 @@ body {
     height: 2px;
     background-color: $MainColor;
     margin-bottom: 4px;
+
+    @include nsm {
+      width: 6.8vw;
+      height: 0.7vw;
+      display: none;
+    }
   }
 
   &__line-3 {
@@ -430,6 +469,11 @@ body {
     background-color: $MainColor;
     margin-bottom: 4px;
     text-align: right;
+      @include nsm {
+        width: 3.5vw;
+        height: 0.7vw;
+        display: none;
+    }
   }
 }
 
@@ -605,6 +649,10 @@ body {
     font-weight: 800;
     color: $MainColor;
     margin-bottom: -3px;
+
+    @include nsm {
+      font-size: 5.2vw;
+    }
   }
 
   &__current-city {
@@ -624,13 +672,8 @@ body {
       margin-top: 219px;
     }
     @include nsm {
-      padding-bottom: 8px;
-    }
-    @include nxs {
-      margin-top: 183px;
-    }
-    @include nxxs {
-      margin-top: 129px;
+      padding-bottom: 2.3vw;
+      margin-top: 40.5vw;
     }
   }
 
@@ -638,7 +681,7 @@ body {
     font-family: $font-petrov;
     font-style: normal;
     font-weight: 700;
-    font-size: Clamp(25px, 2vw, 56.94px);
+    font-size: Clamp(25px, 2vw, 40.94px);
     line-height: 106.5%;
     text-transform: uppercase;
     color: $YRealWhite;
@@ -654,19 +697,16 @@ body {
       max-width: 480px;
     }
 
-    @include nxs {
-
-    }
 
     @include nsm {
       max-width: 400px;
-      margin: 0 auto;
-      padding: 0px 0px 25px;
+      margin: 0 0 -1vw 7.9vw;
+      padding: 0px 0px 8vw;
+      font-size: 4.2vw;
     }
 
     @include nxxs {
       // margin: 0 0 78px 14px;
-      margin: 0 0 -4px 28px;
     }
   }
 
@@ -675,6 +715,10 @@ body {
     width: 100%;
     margin-right: 35.68px;
     margin-left: 0px;
+
+    @include nsm {
+      max-width: 22vw;
+    }
 
     @include nxs {
       margin-right: 12px;
@@ -753,9 +797,11 @@ body {
     }
     @include nsm {
       margin-left: 0px;
+      min-width: 130px;
+      font-size: 4.75vw;
     }
     @include nxs {
-      min-width: 156px;
+      min-width: 100px;
     }
 
     &:hover {
@@ -767,27 +813,44 @@ body {
     }
 
     &::before {
-      content: url('/assets/images/main-page/location.svg');
-      // margin-right: 13px;
-      max-height: 31px;
+      content: url('');
+      max-height: 17px;
       margin-right: 5px;
 
-      @include nxxs {
-        content: url('/assets/images/main-page/location-mobile.svg');
-        margin-right: 4px;
+      @include nsm {
+        background: url('/assets/images/main-page/location.svg');
+        background-size: cover;
+        max-height: 7vw;
+        height: 5.5vw;
+        width: 5.5vw;
+        margin-bottom: 1.2vw;
       }
+      @media (min-width: 768px) {
+        content: url('/assets/images/main-page/location.svg');
+        max-height: 28px;
+        margin-left: 9px;
+      }
+
     }
 
     &::after {
-      content: url('/assets/images/main-page/arrow-down.svg');
-      // margin-left: 13px;
+      content: '';
       transform: rotate(0deg);
       max-height: 24px;
       margin-left: 15px;
 
-      @include nxxs {
-        content: url('/assets/images/main-page/arrow-down-mobile.svg');
-        max-height: 17px;
+      @include nsm {
+        background: url('/assets/images/main-page/arrow-down.svg');
+        background-size: cover;
+        max-height: 7vw;
+        height: 5.5vw;
+        width: 5.5vw;
+        margin-left: 2vw;
+      }
+
+      @media (min-width: 768px) {
+        content: url('/assets/images/main-page/arrow-down.svg');
+        max-height: 24px;
         margin-left: 9px;
       }
     }
@@ -951,16 +1014,22 @@ body {
     max-width: 506px;
     padding-top: 14.64px;
     color: $MainColor;
+    font-size: clamp(40px, 4vw, 56.94px);
     @include nsm {
-      padding-top: 12.64px;
+      font-size: clamp(20.242px, 6vw, 56.94px);
     }
   }
   &__subtitle-p {
-    font-size: clamp(14px, 4vw, 39.8px);
+    font-size: clamp(20px, 3vw, 39.8px);
     font-weight: 400;
     line-height: 100%;
     padding: 8.82px 0px 0px 4.57px;
     color: $MainColor;
+
+    @include nsm {
+      font-size: 4.5vw;
+      font-size: clamp(14.049px, 3vw, 39.8px);
+    }
 
     @include nxxs {
       padding: 3px 0 0 1px;
@@ -1022,7 +1091,7 @@ body {
   &__list {
     display: grid;
     grid-template-columns: 0.97fr 1.07fr 0.7fr 1.01fr;
-    grid-template-rows: Clamp(42px, 3vw, 66px);
+    grid-template-rows: Clamp(42px, 5vw, 66px);
     margin: 0 auto;
     gap: 33px;
     margin-bottom: 28px;
@@ -1034,7 +1103,7 @@ body {
     @include nsm {
       grid-template-columns: 1fr;
       grid-template-rows: none;
-      max-width: 400px;
+      max-width: 94vw;
       li:nth-child(1) {
         order: 3;
       }
@@ -1077,11 +1146,19 @@ body {
         line-height: 130%;
         font-family: $font-petrov;
         font-weight: 400;
-        font-size: Clamp(18px, 1.5vw, 25px);
+        font-size: Clamp(18px, 2vw, 25px);
         text-align: center;
         text-transform: uppercase;
         cursor: default;
 
+
+      @include nlg {
+        font-size: clamp(18px, 2vw, 23px);
+      }
+
+        @include nsm {
+          font-size: 5.625vw;
+        }
       }
 
       @include nmd {
@@ -1089,12 +1166,10 @@ body {
       }
       @include nsm {
         border-radius: 13px;
+        height: 12.5vw;
         // border: 0.879px solid rgba(255, 255, 255, 0.15);
         // background: linear-gradient(93deg, rgba(255, 255, 255, 0.30) 5.83%, rgba(255, 255, 255, 0.10) 98.85%);
         // box-shadow: 0px 17.58308px 17.58308px 0px rgba(0, 0, 0, 0.05);
-      }
-      @include nxxs {
-        height: 40px;
       }
     }
   }
@@ -1117,11 +1192,11 @@ body {
     }
 
     @include nsm {
-      max-width: 400px;
+      max-width: 94vw;
       margin: 0 auto;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-
+      gap: 2vw 8px;
       grid-template-areas:
         'name'
         'phone'
@@ -1130,9 +1205,7 @@ body {
         'btn';
     }
 
-    @include nxxs {
-      gap: 6px 8px;
-    }
+
   }
 
   &__err {
@@ -1198,7 +1271,8 @@ body {
 
     @include nsm {
       border-radius: 8px;
-      height: 36px;
+      height: 11.3vw;
+      font-size: 5vw;
     }
     @include nxxs {
       margin-top: 2px;
@@ -1219,18 +1293,22 @@ body {
     height: 100%;
 
     &::placeholder {
-      color: #808080;
-      font-size: Clamp(12px, 2vw, 21px);
+      color: #808080;//21
       font-weight: 300;
       opacity: 0.7;
       top: 0%;
       left: 0%;
       transform: translate(0 , -15%);
+
+      @include nsm {
+        transform: translate(0 , 0);
+      }
     }
 
     @include nsm {
       border-radius: 8px;
-      height: 36px;
+      height: 11.3vw;
+      font-size: 4vw;
     }
 
     @include nxxs {
@@ -1685,10 +1763,10 @@ body {
   @include nsm {
     padding: 46px 10px 140px;
     max-height: 100%;
+    display: none;
   }
   @include nxs {
     padding: 46px 10px 76px;
-    display: none;
   }
   @include nxxs {
     padding: 14px 7px 117px;
@@ -1698,7 +1776,7 @@ body {
     text-align: center;
     font-family: $font-porsche;
     font-weight: 800;
-    font-size: clamp(28.964px, 3.7vw, 58.484px);
+    font-size: clamp(28.964px, 4.6vw, 58.484px);
     line-height: 100%;
     color: $YRealWhite;
     margin-bottom: 9px;
@@ -1711,7 +1789,7 @@ body {
 
 
     @include nsm {
-      font-size: clamp(32.543px, 6vw, 50px);
+      font-size: clamp(32.543px, 10vw, 90px);
       text-align: left;
       margin-bottom: 20px;
 
@@ -1869,7 +1947,7 @@ body {
       @include nsm {
         margin-left: 20px;
         margin-bottom: 15px;
-        margin-top: 30px;
+        margin-top: 0.5vw;
       }
       @include nxs {
         margin-bottom: 13px;
@@ -1888,8 +1966,8 @@ body {
     color: #383838;
 
     @include nsm {
-      max-width: 474px;
-      font-size: clamp(14px, 3vw, 40px);
+      max-width: 767px;
+      font-size: 4.4vw;
 
     }
   }
@@ -1907,11 +1985,18 @@ body {
     margin-left: 10px;
   }
 
-  @include nxs {
+  @include nsm {
     display: block;
+    max-height: 1538px;
+    padding: 15px 0 120px;
   }
-
-
+  @include nxs {
+    padding: 15px 0 82px;
+  }
+  @include nxxs {
+    display: block;
+    padding: 15px 0 190px;
+  }
 
 }
 
@@ -1922,12 +2007,12 @@ body {
   background-size: cover;
 
 
-  @include nmd {
-
+  @include nsm {
+    display: none;
   }
+
   @include nxs {
     margin-top: 0px;
-    display: none;
   }
 
   @include nxxs {
@@ -1967,7 +2052,7 @@ body {
 
 
     @include nsm {
-      // font-size: 4.7vw;
+      font-size: 4.7vw;
     }
 
     @include nxxs {
@@ -2006,10 +2091,9 @@ body {
     img {
       object-fit: cover;
       width: 100%;
-      height: 100%;
       border-radius: 15px;
       margin-top: 20px;
-      height: 37em;
+      // height: 37em;
       max-width: 520px;
 
       @include nmd {
@@ -2050,25 +2134,29 @@ body {
     font-family: $font-petrov;
     font-weight: 800;
     // font-size: Clamp(14px, 3vw, 39.258px);
-    font-size: Clamp(26.984px, 3vw, 39.258px);
+    font-size: Clamp(26.984px, 5vw, 39.258px);
     line-height: 114.5%;
     color: $YRealWhite;
     text-transform: uppercase;
     text-align: center;
     padding-top: 56px;
 
+    @include nlg {
+      font-size: Clamp(26.984px, 2vw, 39.258px);
+    }
+
     @include nsm {
       // font-size: 4.5vw;
       margin-bottom: 0;
       padding-top: 0px;
+      line-height: clamp(18px, 5vw, 90px);
+      font-size: clamp(26.984px, 8vw, 90.258px);
+      span {
+        font-size: clamp(14.853px, 4vw, 50px);
+      }
     }
     @include nxs {
-      max-width: 300px;
-      line-height: 21px;
       text-align: center;
-      span {
-        font-size: 14.853px;
-      }
     }
   }
 
@@ -2128,6 +2216,7 @@ body {
       margin-bottom: 9px;
       font-weight: 800;
       line-height: 32px;
+
 
       @include nmd {
         margin-bottom: 2%;
@@ -2240,8 +2329,20 @@ body {
 
 
 
-  @include nxs {
+  @media (min-width: 450px) and (max-width: 767px) {
+    .order__image {
+      height: clamp(486px, 58vw, 500px);
+    }
+  }
+
+
+
+
+  @include nsm {
     display: block;
+  }
+
+  @include nxs {
     padding-bottom: 1.3em;
       background: url('/assets/images/main-page/mobile/bg-img/order2.webp')
       no-repeat center;
@@ -2262,7 +2363,7 @@ body {
     background: #fff;
   }
 
-  @include nxs {
+  @include nsm {
     display: none;
   }
 
@@ -2280,7 +2381,7 @@ body {
   &__content-mobile {
     display: none;
 
-    @include nxs {
+    @include nsm {
       display: block;
     }
   }
@@ -2288,13 +2389,19 @@ body {
   &__img-mobile {
     display: none;
 
-    @include nxs {
-      left: 50%;
+    @include nsm {
+      left: 54%;
       position: relative;
       transform: translateX(-50%);
       width: 106%;
       display: block;
       margin-top: -108px;
+    }
+    @include nsm {
+      margin-top: -31vw;
+    }
+    @include nxs {
+      left: 54%;
     }
   }
 
@@ -2402,6 +2509,7 @@ body {
       padding-left: 3vw;
       font-size: 4.5vw;
       width: 100vw;
+      margin-top: -18vw;
     }
     @include nsm {
       font-size: 3vw;
@@ -2415,7 +2523,6 @@ body {
 
     @include nxxs {
       max-width: 300px;
-      margin-top: -82px;
       margin-bottom: 45px;
     }
   }
@@ -2453,6 +2560,7 @@ body {
     @include nxs {
       order: 3;
       font-size: 4.5vw;
+      margin-bottom: 22px;
     }
 
     @include nxxs {
@@ -2460,7 +2568,6 @@ body {
       font-size: 14px;
       margin-top: 23px;
       padding-top: 0px;
-      margin-bottom: 22px;
     }
   }
 
@@ -2502,7 +2609,7 @@ body {
     @include nsm {
       margin-top: 13vw;
       flex-direction: column;
-      padding: 15px 15px 19px;
+      padding: 15px 15px 4vw;
       line-height: 134%;
       border-radius: 0px;
       width: 100%;
@@ -2609,6 +2716,10 @@ body {
   background-size: cover;
   display: none;
 
+  @include nsm {
+    display: block;
+  }
+
 
   .details__title-wrap {
     text-align: left;
@@ -2625,15 +2736,19 @@ body {
     font-weight: 600;
     margin-bottom: 8px;
     letter-spacing: -1px;
+
+    @include nsm {
+      font-size: 18vw;
+    }
   }
   .details__title2 {
     font-size: 39.75px; 
     font-weight: 400;
     margin-left: 6px;
-  }
 
-  @include nxs {
-    display: block;
+    @include nsm {
+      font-size: 12vw;
+    }
   }
 }
 
@@ -2676,8 +2791,12 @@ body {
     margin-bottom: 70px;
     text-align: center;
 
-    @include nxs {
+    @include nsm {
       font-size: 12vw;
+    }
+  
+
+    @include nxs {
       margin-bottom: 24px;
     }
   }
@@ -2728,9 +2847,9 @@ body {
         display: block;
       }
     }
-    @include nxs {
-      font-size: 15px;
-      font-size: 4.375vw;
+
+    @include nsm {
+      font-size: clamp(4.375vw, 4vw, 50vw);
     }
 
     // p {
@@ -2798,8 +2917,11 @@ body {
       line-height: 130%;
     }
 
+    @include nsm {
+      font-size: 4.4vw;
+    }
+
     @include nxxs {
-      font-size: 14px;
       margin-left: -15px;
       margin-top: 8.6px;
       max-width: 270px;
@@ -2911,14 +3033,26 @@ body {
     h4 {
       font-size: clamp(18px, 2vw, 35px);
       margin-bottom: 2px;
+      @include nlg {
+        font-size: 2.3vw;
+      }
+      @include nlgs {
+        font-size: 2.6vw;
+      }
+      @include nsm {
+        font-size: 5vw;
+      }
     }
   }
 
   &__brands:first-child {
     h4 {
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       padding-left: 0px;
+      @include nsm{
+        justify-content: center;
+      }
     }
   }
 
@@ -3500,6 +3634,7 @@ body {
 
 .__js__input {
   width: 100%;
+  border: 0.489px solid #00418C;
   // height: 100%;
 
   // @include nsm {

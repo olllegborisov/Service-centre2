@@ -341,7 +341,6 @@ body {
 .request {
     padding-bottom: 102px;
     margin-top: 45px;
-    background: #33C1AF;
 
 
     @include nsm {
@@ -466,7 +465,7 @@ body {
     }
 
     &__wrapper {
-        padding-top: 53px;
+        margin-top: 105px;
         background: #33C1AF;
         border-radius: 13px;
         display: grid;
@@ -1229,7 +1228,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 8.5rem 21rem;
         padding: 14px;
-        background: #33C1AF;
+        background: #3B8279;
         border-radius: 36px;
         grid-template-areas: 
         "how img"
@@ -1237,6 +1236,7 @@ body {
 
         @include nmd {
             grid-template-columns: repeat(2, 1fr);
+            background: #33C1AF;
         }
 
         @include nsm {
@@ -1685,7 +1685,7 @@ body {
     }
 
     &__gray-bgc {
-        background-color: #33C1AF;
+        background-color: #fff;
         border-radius: 15px;
 
         @include nmd {

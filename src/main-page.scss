@@ -370,6 +370,12 @@ body {
       color: $YRealWhite;
       font-size: Clamp(18px, 3vw, 105px);
     }
+
+    img {
+      @include nsm {
+        width: 55.1vw;
+      }
+    }
   }
 
   &__mobile {
@@ -491,6 +497,10 @@ body {
     background: linear-gradient(91deg, #38C2AC 13.96%, #96DC77 91.67%);
     background-size: cover;
 
+    @include nsm {
+      height: auto;
+    }
+
     &_active {
       display: block;
     }
@@ -503,6 +513,10 @@ body {
     position: relative;
     padding: 0 14px;
     max-width: 708px;
+
+    @include nsm {
+      margin: 3.7vw auto;
+    }
   }
 
   &__mob-item:nth-of-type(3) {
@@ -517,6 +531,11 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: $YRealWhite;
+
+    @include nsm {
+      font-size: 5vw;
+      margin-bottom: 5vw;
+    }
   }
 
   &__mob-img {
@@ -531,6 +550,10 @@ body {
     font-size: 25px;
     line-height: 100%;
     margin-top: 0px;
+
+    @include nsm {
+      font-size: 7.8vw;
+    }
   }
 }
 
@@ -544,9 +567,18 @@ body {
   z-index: 50000;
   margin-left: -9px;
 
+  @include nsm {
+    margin-top: 21.2vw;
+  }
+
   .service-center__list-item {
     padding-bottom: 9px;
     padding-top: 3px;
+
+    @include nsm {
+      padding-bottom: 2.8vw;
+      padding-top: 0.95vw;
+    }
   }
 }
 
@@ -599,11 +631,19 @@ body {
     line-height: 100%;
     text-transform: uppercase;
     color: $YRealWhite;
+
+    @include nsm {
+      font-size: 6.5vw;
+    }
   }
 
   &__close {
     font-size: 25px;
     line-height: 100%;
+
+    @include nsm {
+      font-size: 7.8vw;
+    }
   }
 
   &__img {
@@ -914,6 +954,11 @@ body {
     padding-bottom: 5px;
     padding-top: 4px;
     cursor: pointer;
+
+    @include nsm {
+      font-size: clamp(17.9px, 4vw, 50px);
+      //5.6vw;
+    }
 
     &:hover {
       background: rgba(255, 255, 255, 0.2);
@@ -3297,7 +3342,7 @@ body {
     color: #181818;
 
     &:hover {
-      color: $YRed;
+      color: #33c1af;
     }
 
     @include nmd {
@@ -3339,7 +3384,7 @@ body {
     color: $YBlack;
 
     &:hover {
-      color: $YRed;
+      color: #33c1af;
     }
 
     @include nmd {
@@ -3634,12 +3679,14 @@ body {
 
 .__js__input {
   width: 100%;
-  border: 0.489px solid #00418C;
   // height: 100%;
 
   // @include nsm {
   //     height: 36px;
   // }
+  @include nsm {
+    border: 0.489px solid #00418C;
+  }
 }
 
 .service-center__textarea {

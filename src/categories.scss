@@ -1896,6 +1896,7 @@ body {
         align-items: center;
         justify-content: center;
         grid-area: phone;
+        color: #383838;
 
         @include nmd {
             flex-direction: row;
@@ -1957,7 +1958,7 @@ body {
         color: #181818;
 
         &:hover {
-            color: $YRed;
+            color: #33c1af;
         }
 
         @include nmd {
@@ -1975,7 +1976,7 @@ body {
         font-weight: 600;
         font-size: Clamp(15px, 4vw, 50px);
         line-height: 85px;
-        color: $YRealWhite;
+        color: #383838;
         transition: 0.2s;
 
         &:hover {
@@ -1998,7 +1999,7 @@ body {
         color: $YBlack;
 
         &:hover {
-            color: $YRed;
+            color: #33c1af;
         }
 
         @include nmd {

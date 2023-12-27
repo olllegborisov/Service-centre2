@@ -385,8 +385,8 @@ body {
 
         h2 {
             margin-bottom: 11px;
-            @include nxs {
-                margin-bottom: 36px;
+            @include nsm {
+                margin-bottom: 11.5vw;
             }
         }
 
@@ -398,8 +398,10 @@ body {
             line-height: 110%;
             margin-top: 30px;
             margin-bottom: 18px;
-            @include nxs {
-                margin-top: 35px;
+            @include nsm {
+                font-size: 7.8vw;
+                margin-bottom: 5.6vw;
+                margin-top: 11vw;
             }
         }
 
@@ -489,6 +491,7 @@ body {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             background: none;
+            margin-top: 4vw;
         }
         @include nxs {
             padding-top: 30px;
@@ -1286,11 +1289,11 @@ body {
             padding: 0;
             font-size: 9.5vw;
             text-align: center;
+            font-size: 12.3vw;
         }
         @include nxs {
             padding-right: 0px;
             font-size: 38.995px;
-            font-size: 12.5vw;
         }
     }
 

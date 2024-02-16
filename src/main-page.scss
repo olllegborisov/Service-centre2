@@ -52,14 +52,13 @@ body {
   width: 100%;
   transition: opacity 0.3s linear;
 
-  background: url('/assets/images/main-page/bg-img-header_result.webp')
-    no-repeat center;
+  background: url('/content/first/bg-img-header_result.webp') no-repeat center;
   background-size: cover;
 
   @include nmd {
     height: 40px;
-    background: url('/assets/images/main-page/bg-img-header-mobile_result.webp')
-      no-repeat center;
+    background: url('/content/first/bg-img-header-mobile_result.webp') no-repeat
+      center;
     background-size: cover;
   }
 
@@ -87,12 +86,11 @@ body {
     margin: 0 auto;
     align-items: center;
 
-    background: url('/assets/images/main-page/bg-img-header_result.webp')
-      no-repeat center;
+    background: url('/content/first/bg-img-header_result.webp') no-repeat center;
     background-size: cover;
 
     @include nmd {
-      background: url('/assets/images/main-page/bg-img-header-mobile_result.webp')
+      background: url('/content/first/bg-img-header-mobile_result.webp')
         no-repeat center;
       background-size: cover;
     }
@@ -206,7 +204,6 @@ body {
     padding-top: 5px;
     max-width: 708px;
 
-
     @include nsm {
       padding-top: 1.5vw;
     }
@@ -226,7 +223,6 @@ body {
     // }
   }
 
-
   &__menu-burger {
     width: 22px;
     height: 22px;
@@ -237,7 +233,7 @@ body {
     align-items: flex-end;
 
     @include nsm {
-      background: url(/assets/images/main-page/burger.svg) no-repeat;
+      background: url(/content/first/burger.svg) no-repeat;
       background-size: cover;
       height: 4.5vw;
       width: 7vw;
@@ -433,7 +429,7 @@ body {
     align-items: flex-end;
 
     @include nsm {
-      background: url('/assets/images/main-page/burger.svg') no-repeat;
+      background: url('/content/first/burger.svg') no-repeat;
       background-size: cover;
       height: 4.5vw;
       width: 7vw;
@@ -475,10 +471,10 @@ body {
     background-color: $MainColor;
     margin-bottom: 4px;
     text-align: right;
-      @include nsm {
-        width: 3.5vw;
-        height: 0.7vw;
-        display: none;
+    @include nsm {
+      width: 3.5vw;
+      height: 0.7vw;
+      display: none;
     }
   }
 }
@@ -494,7 +490,7 @@ body {
     display: none;
     border-radius: 18.452px;
 
-    background: linear-gradient(91deg, #38C2AC 13.96%, #96DC77 91.67%);
+    background: linear-gradient(91deg, #38c2ac 13.96%, #96dc77 91.67%);
     background-size: cover;
 
     @include nsm {
@@ -602,8 +598,8 @@ body {
     top: 0;
     background-color: $YBlack;
     display: none;
-    background: url('/assets/images/main-page/bg-img-cities2_result.webp')
-      no-repeat center;
+    background: url('/content/first/bg-img-cities2_result.webp') no-repeat
+      center;
     background-size: cover;
   }
 
@@ -668,13 +664,12 @@ body {
   margin: -110px 0 0;
   position: relative;
 
-  background: url('/assets/images/main-page/bg-img_result.webp') no-repeat
-    center;
+  background: url('/content/first/bg-img_result.webp') no-repeat center;
   background-size: cover;
 
   @include nsm {
-    background: url('/assets/images/main-page/bg-img-main-mobile_result.webp')
-      no-repeat center;
+    background: url('/content/first/bg-img-main-mobile_result.webp') no-repeat
+      center;
     background-size: cover;
   }
 
@@ -689,6 +684,7 @@ body {
     font-weight: 800;
     color: $MainColor;
     margin-bottom: -3px;
+    margin-top: 47px;
 
     @include nsm {
       font-size: 5.2vw;
@@ -736,7 +732,6 @@ body {
       padding: 0 15px;
       max-width: 480px;
     }
-
 
     @include nsm {
       max-width: 400px;
@@ -831,6 +826,7 @@ body {
     justify-content: start;
     width: max-content;
     transition: 0.2s;
+    display: none;
 
     @include nmd {
       margin-left: 13px;
@@ -858,7 +854,7 @@ body {
       margin-right: 5px;
 
       @include nsm {
-        background: url('/assets/images/main-page/location.svg');
+        background: url('/content/first/location.svg');
         background-size: cover;
         max-height: 7vw;
         height: 5.5vw;
@@ -866,11 +862,10 @@ body {
         margin-bottom: 1.2vw;
       }
       @media (min-width: 768px) {
-        content: url('/assets/images/main-page/location.svg');
+        content: url('/content/first/location.svg');
         max-height: 28px;
         margin-left: 9px;
       }
-
     }
 
     &::after {
@@ -880,7 +875,7 @@ body {
       margin-left: 15px;
 
       @include nsm {
-        background: url('/assets/images/main-page/arrow-down.svg');
+        background: url('/content/first/arrow-down.svg');
         background-size: cover;
         max-height: 7vw;
         height: 5.5vw;
@@ -889,7 +884,7 @@ body {
       }
 
       @media (min-width: 768px) {
-        content: url('/assets/images/main-page/arrow-down.svg');
+        content: url('/content/first/arrow-down.svg');
         max-height: 24px;
         margin-left: 9px;
       }
@@ -907,8 +902,8 @@ body {
     position: absolute;
     width: 100%;
     z-index: 50000;
-    background: url('/assets/images/main-page/bg-img-cities2_result.webp')
-      no-repeat center;
+    background: url('/content/first/bg-img-cities2_result.webp') no-repeat
+      center;
     background-size: cover;
 
     @include nmd {
@@ -1196,10 +1191,9 @@ body {
         text-transform: uppercase;
         cursor: default;
 
-
-      @include nlg {
-        font-size: clamp(18px, 2vw, 23px);
-      }
+        @include nlg {
+          font-size: clamp(18px, 2vw, 23px);
+        }
 
         @include nsm {
           font-size: 5.625vw;
@@ -1249,8 +1243,6 @@ body {
         'text'
         'btn';
     }
-
-
   }
 
   &__err {
@@ -1338,15 +1330,15 @@ body {
     height: 100%;
 
     &::placeholder {
-      color: #808080;//21
+      color: #808080; //21
       font-weight: 300;
       opacity: 0.7;
       top: 0%;
       left: 0%;
-      transform: translate(0 , -15%);
+      transform: translate(0, -15%);
 
       @include nsm {
-        transform: translate(0 , 0);
+        transform: translate(0, 0);
       }
     }
 
@@ -1483,8 +1475,7 @@ body {
   position: relative;
   background-color: #fff;
 
-  background: url('/assets/images/main-page/bg-img-services_result.webp')
-    no-repeat center;
+  background: url('/content/first/bg-img-services_result.webp') no-repeat center;
   background-size: cover;
 
   @include nmd {
@@ -1616,7 +1607,7 @@ body {
       width: 100%;
       // height: Clamp(118px, 40vw, 388px);
       height: clamp(116px, 36vw, 388px);
-      background: url('/assets/images/main-page/armchairs.png') no-repeat;
+      background: url('/content/first/armchairs.png') no-repeat;
       background-size: cover;
       margin-bottom: 38px;
       background-position-x: center;
@@ -1656,7 +1647,7 @@ body {
     }
 
     &_simulators {
-      background: url('/assets/images/main-page/services-fitnest-simulator_result.webp')
+      background: url('/content/first/services-fitnest-simulator_result.webp')
         no-repeat;
       background-size: cover;
       width: 32%;
@@ -1665,7 +1656,7 @@ body {
       background-position-x: center;
 
       @include nsm {
-        background: url('/assets/images/main-page/services-fitnest-simulator-mobile2_result.webp')
+        background: url('/content/first/services-fitnest-simulator-mobile2_result.webp')
           no-repeat;
         background-size: cover;
       }
@@ -1684,8 +1675,7 @@ body {
     }
 
     &_massagers {
-      background: url('/assets/images/main-page/services-massagers_result.webp')
-        no-repeat;
+      background: url('/content/first/services-massagers_result.webp') no-repeat;
       background-size: cover;
       width: 32%;
       height: clamp(118px, 25vw, 298px);
@@ -1693,7 +1683,7 @@ body {
       background-position-x: center;
 
       @include nxxs {
-        background: url('/assets/images/main-page/services-massagers-mobile_result.webp')
+        background: url('/content/first/services-massagers-mobile_result.webp')
           no-repeat;
         background: cover;
       }
@@ -1734,7 +1724,7 @@ body {
     }
 
     &_treadmills {
-      background: url('/assets/images/main-page/services-treadmills_result.webp')
+      background: url('/content/first/services-treadmills_result.webp')
         no-repeat;
       background-size: cover;
       width: 29.6%;
@@ -1743,7 +1733,7 @@ body {
       background-position-x: center;
 
       @include nxxs {
-        background: url('/assets/images/main-page/services-treadmills-mobile_result.webp')
+        background: url('/content/first/services-treadmills-mobile_result.webp')
           no-repeat;
       }
 
@@ -1831,7 +1821,6 @@ body {
     br {
       display: none;
     }
-
 
     @include nsm {
       font-size: clamp(32.543px, 10vw, 90px);
@@ -2013,7 +2002,6 @@ body {
     @include nsm {
       max-width: 767px;
       font-size: 4.4vw;
-
     }
   }
 }
@@ -2025,7 +2013,6 @@ body {
   margin-top: -1px;
   display: none;
 
-  
   &__title {
     margin-left: 10px;
   }
@@ -2042,15 +2029,12 @@ body {
     display: block;
     padding: 15px 0 190px;
   }
-
 }
 
 .order {
   padding-bottom: 5.2em;
-  background: url('/assets/images/main-page/bg-img-order2_result.webp')
-  no-repeat center;
+  background: url('/content/first/bg-img-order2_result.webp') no-repeat center;
   background-size: cover;
-
 
   @include nsm {
     display: none;
@@ -2079,7 +2063,6 @@ body {
     padding-top: 37px;
     display: none;
 
-
     @include nxxs {
       padding-top: 6px;
       display: block;
@@ -2094,7 +2077,6 @@ body {
     line-height: 160%;
     color: $YRealWhite;
     padding-top: 19px;
-
 
     @include nsm {
       font-size: 4.7vw;
@@ -2262,7 +2244,6 @@ body {
       font-weight: 800;
       line-height: 32px;
 
-
       @include nmd {
         margin-bottom: 2%;
       }
@@ -2307,8 +2288,6 @@ body {
         margin-left: 16px;
         list-style-type: none;
         position: relative;
-
-
       }
       li:last-child {
         margin-top: 2px;
@@ -2365,14 +2344,11 @@ body {
 
 .order-mobile {
   padding-bottom: 5.2em;
-  background: url('/assets/images/main-page/bg-img-order2_result.webp')
-  no-repeat center;
+  background: url('/content/first/bg-img-order2_result.webp') no-repeat center;
   background-size: cover;
   padding-top: 29px;
   margin-top: -1px;
   display: none;
-
-
 
   @media (min-width: 450px) and (max-width: 767px) {
     .order__image {
@@ -2380,18 +2356,14 @@ body {
     }
   }
 
-
-
-
   @include nsm {
     display: block;
   }
 
   @include nxs {
     padding-bottom: 1.3em;
-      background: url('/assets/images/main-page/mobile/bg-img/order2.webp')
-      no-repeat center;
-      background-size: cover;
+    background: url('/content/first/mobile/bg-img/order2.webp') no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -2400,8 +2372,7 @@ body {
   padding: 57px 0 47px;
   background: $YRealWhite;
   overflow: hidden;
-  background: url('/assets/images/main-page/bg-img-details_result.webp')
-  no-repeat center;
+  background: url('/content/first/bg-img-details_result.webp') no-repeat center;
   background-size: cover;
 
   @include nmd {
@@ -2416,7 +2387,6 @@ body {
     padding: 0;
     min-height: 1263px;
   }
-
 
   &__content {
     @include nxs {
@@ -2623,7 +2593,7 @@ body {
       position: absolute;
       width: 239px;
       height: 241px;
-      background: url('/assets/images/main-page/details-girl-mobile_result.webp')
+      background: url('/content/first/details-girl-mobile_result.webp')
         no-repeat;
       left: 50%;
       transform: translateX(-50%);
@@ -2638,8 +2608,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url('/assets/images/main-page/bg-img-girl_result.webp')
-    no-repeat center;
+    background: url('/content/first/bg-img-girl_result.webp') no-repeat center;
     background-size: cover;
     border-radius: 18.452px;
     grid-area: details;
@@ -2663,8 +2632,8 @@ body {
     @include nxs {
       order: 2;
       margin-top: 44vw;
-      background: url('/assets/images/main-page/mobile/bg-img/girl_result.webp')
-      no-repeat center;
+      background: url('/content/first/mobile/bg-img/girl_result.webp') no-repeat
+        center;
       background-size: cover;
       min-height: 116px;
       padding-top: 83px;
@@ -2703,7 +2672,7 @@ body {
       color: $YRealWhite;
       width: 100%;
       border-radius: 18.452px;
-      background: linear-gradient(91deg, #38C2AC 13.96%, #96DC77 91.67%);
+      background: linear-gradient(91deg, #38c2ac 13.96%, #96dc77 91.67%);
 
       br {
         @include nmd {
@@ -2749,15 +2718,13 @@ body {
       }
     }
   }
-  
 }
 .details-mobile {
   position: relative;
   padding: 8px 0 0px;
   background: $YRealWhite;
   overflow: hidden;
-  background: url('/assets/images/main-page/bg-img-details_result.webp')
-  no-repeat center;
+  background: url('/content/first/bg-img-details_result.webp') no-repeat center;
   background-size: cover;
   display: none;
 
@@ -2765,12 +2732,12 @@ body {
     display: block;
   }
 
-
   .details__title-wrap {
     text-align: left;
     margin: 0 auto;
   }
-  .details__title1, .details__title2 {
+  .details__title1,
+  .details__title2 {
     color: #000;
     line-height: 88%;
     font-family: Futura PT;
@@ -2787,7 +2754,7 @@ body {
     }
   }
   .details__title2 {
-    font-size: 39.75px; 
+    font-size: 39.75px;
     font-weight: 400;
     margin-left: 6px;
 
@@ -2798,8 +2765,8 @@ body {
 }
 
 .two-sections2 {
-  background: url('/assets/images/main-page/bg-img-two-sections2_result.webp')
-    no-repeat center;
+  background: url('/content/first/bg-img-two-sections2_result.webp') no-repeat
+    center;
   background-size: cover;
   margin-top: -2px;
 
@@ -2814,7 +2781,7 @@ body {
   font-family: 'Gilroy';
 
   @include nmd {
-    background: url('/assets/images/main-page/mobile/bg-img/questions_result.webp')
+    background: url('/content/first/mobile/bg-img/questions_result.webp')
       no-repeat center;
     background-size: cover;
   }
@@ -2839,7 +2806,6 @@ body {
     @include nsm {
       font-size: 12vw;
     }
-  
 
     @include nxs {
       margin-bottom: 24px;
@@ -2933,7 +2899,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    content: url('/assets/images/main-page/arrow-white.svg');
+    content: url('/content/first/arrow-white.svg');
     transform: rotate(0deg);
     transition: transform 0.2s ease-in;
     // margin: 10px;
@@ -3095,12 +3061,11 @@ body {
       display: flex;
       // justify-content: center;
       padding-left: 0px;
-      @include nsm{
+      @include nsm {
         justify-content: center;
       }
     }
   }
-
 
   &__subtitle {
     font-family: $font-petrov;
@@ -3128,11 +3093,11 @@ body {
       margin-bottom: 14px;
 
       &::before {
-        content: url('/assets/images/main-page/location-black.svg');
+        content: url('/content/first/location-black.svg');
         margin: 4px 15px 0px 8px;
 
         @include nsm {
-          content: url('/assets/images/main-page/icon_contacts_location.svg');
+          content: url('/content/first/icon_contacts_location.svg');
           margin-right: 5vw;
           position: absolute;
           top: -0.1rem;
@@ -3140,7 +3105,7 @@ body {
         }
 
         @include nxs {
-          content: url('/assets/images/main-page/icon_contacts_location-mobile.svg');
+          content: url('/content/first/icon_contacts_location-mobile.svg');
         }
       }
     }
@@ -3158,12 +3123,12 @@ body {
       }
 
       &::before {
-        content: url('/assets/images/main-page/time.svg');
+        content: url('/content/first/time.svg');
         margin: 0px 11px 0 7px;
 
         @include nsm {
           margin-right: 5vw;
-          content: url('/assets/images/main-page/icon_contacts_clock.svg');
+          content: url('/content/first/icon_contacts_clock.svg');
           margin-right: 5vw;
           position: absolute;
           top: -0.1rem;
@@ -3180,7 +3145,7 @@ body {
       position: relative;
 
       &::before {
-        content: url('/assets/images/main-page/trade-in.svg');
+        content: url('/content/first/trade-in.svg');
         margin: 0px 16px 0 7px;
 
         @include nsm {
@@ -3190,7 +3155,7 @@ body {
           left: -0.4rem;
         }
         @include nxs {
-          content: url('/assets/images/main-page/trade-in-mobile.svg');
+          content: url('/content/first/trade-in-mobile.svg');
           left: -0.1rem;
           top: 0;
         }
@@ -3288,11 +3253,11 @@ body {
       padding: 0;
 
       &::before {
-        content: url('/assets/images/main-page/phone.svg');
+        content: url('/content/first/phone.svg');
         margin-right: 20px;
 
         @include nxs {
-          content: url('/assets/images/main-page/phone-mobile.svg');
+          content: url('/content/first/phone-mobile.svg');
           margin-right: 12px;
         }
       }
@@ -3309,7 +3274,7 @@ body {
       color: $MainColor;
 
       &::before {
-        content: url('/assets/images/main-page/phone.svg');
+        content: url('/content/first/phone.svg');
         position: absolute;
         right: 199px;
         top: 2px;
@@ -3685,7 +3650,7 @@ body {
   //     height: 36px;
   // }
   @include nsm {
-    border: 0.489px solid #00418C;
+    border: 0.489px solid #00418c;
   }
 }
 

@@ -1,8 +1,8 @@
 web/robots.txt
 /build
 /runtime
-/web/assets/*
-!/web/assets/.gitkeep
+/web/content/*
+!/web/content/.gitkeep
 /nbproject
 /node_modules
 /web/_static/.sass-cache
@@ -12,7 +12,7 @@ web/robots.txt
 /web/images/.tmb/
 /web/images/.quarantine/
 /web/images-new/*
-/web/css/*.map
+/web/styles/*.map
 .DS_Store
 Thumbs.db
 .npm-debug.log
